@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledLogin } from "./style"
 import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 export default function Login() {
     return (
@@ -12,9 +13,12 @@ export default function Login() {
                     <input type="email" /> <br />
                     <label htmlFor="">Senha</label> <br />
                     <input type="password" /> <br />
-                    <input id="botao-submit" type="button" value="Entrar" />
+                    <button>Entrar</button> <br />
+                    <a href="/cadastro">Não tem Login?</a>
+                    
                 </div>
             </section>
+            <Footer />
             
         </StyledLogin>
     )

@@ -1,6 +1,8 @@
 import React from "react";
 import { StyledCadastro } from "./style"
 import Header from "../../components/Header"
+import Footer from "../../components/Footer"
+
 
 export default function Cadastro() {
     return (
@@ -16,9 +18,10 @@ export default function Cadastro() {
                     <input type="password" /> <br />
                     <label htmlFor="">Repetir Senha</label> <br />
                     <input type="password" /> <br />
-                    <input id="botao-submit" type="button" value="Cadastrar" />
+                    <button>Cadastrar</button>
                 </div>
             </section>
+            <Footer />
             
         </StyledCadastro>
     )

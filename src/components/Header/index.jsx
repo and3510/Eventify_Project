@@ -1,5 +1,6 @@
 import React from "react";
 import {StyledHeader} from './style';
+import Icon_mapa from "../../assets/icon-event.png"
 
 
 
@@ -8,11 +9,13 @@ export default function Header() {
         <StyledHeader>
 
             <section id="header"> 
-            <h1><a href="/"> IMAGE-ICON</a></h1>
+            
+            <a href="/"> <img src={Icon_mapa} /></a>
             
             <nav id="paginas">
+                <a href="">Criar Evento</a>
                 <a href="/login">Login</a> 
-                <a href="/cadastro">Cadastro</a>
+                
             </nav>
             </section>
             

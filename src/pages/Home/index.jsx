@@ -1,7 +1,8 @@
 import React from "react";
 import { StyledHome } from "./style"
-import Mapa from "../../assets/mapa.webp"
+import Calendar from "../../assets/calendar.webp"
 import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 export default function Home() {
     return (
@@ -16,10 +17,19 @@ export default function Home() {
                     <p>Festa na AABB</p>
                 </div>
 
-                <div id="mapa">
-                    <img src={Mapa} />
+                <div id="calendar">
+                    <img src={Calendar} />
+                    <nav>
+                        <ul>
+                            <button>Localização</button>
+                            <button>Categoria</button>
+                            <button>Data</button>
+                        </ul>
+                    </nav>
                 </div>
             </section>
+            <Footer />
+        
             
         </StyledHome>
     )
