@@ -4,6 +4,9 @@ import Calendar from "../../assets/calendar.webp"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 
+const Eventos = ["Pokemon GO", "Campus Party", "Festa na AABB"];
+
+
 export default function Home() {
     return (
         <StyledHome>
@@ -12,9 +15,9 @@ export default function Home() {
 
                 <div id="eventos_principais">
                     <h3>Eventos</h3>
-                    <p>Pokemon GO</p>
-                    <p>Campus Party</p>
-                    <p>Festa na AABB</p>
+                    <a href="/eventsign">{Eventos[0]}</a> 
+                    <a href="/eventsign">{Eventos[1]}</a> 
+                    <a href="/eventsign">{Eventos[2]}</a>
                 </div>
 
                 <div id="calendar">

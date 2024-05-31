@@ -26,22 +26,26 @@ export const StyledHome = styled("Home", {
         fontFamily: "monospace",
         paddingTop: "10px",
         backgroundColor: "#e9dced",
-        marginLeft: "65px"
+        marginLeft: "65px",
 
     },
     "#eventos_principais h3": {
         fontFamily: "monospace"
     },
-    "#eventos_principais p": {
+    "#eventos_principais a": {
         borderBottom: "1px solid #222",
         borderRadius: "5px",
         width: "200px",
         paddingBottom: "6px",
         paddingTop: "6px",
         transition: "0.3s",
-        cursor: "default"
+        cursor: "pointer",
+        textDecoration: "none",
+        display: "block",
+        marginBottom: "15px",
+        color: "black"
     },
-    "#eventos_principais p:hover": {
+    "#eventos_principais a:hover": {
         paddingTop: "13px",
         paddingBottom: "13px",
         backgroundColor: "#fff",
@@ -71,6 +75,7 @@ export const StyledHome = styled("Home", {
         border: "1px solid #e9dced",
         borderRadius: "10px",
         fontFamily: "monospace",
+        fontSize: "15px",
         backgroundColor: "#e9dced",
         transition: "0.3s"
     },

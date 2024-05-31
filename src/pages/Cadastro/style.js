@@ -25,6 +25,11 @@ export const StyledCadastro = styled("Cadastro", {
         backgroundColor: "#e9dced",
 
     },
+    "#form h3": {
+        marginTop: "-1px",
+        textAlign: "center",
+        fontFamily: "monospace"
+    },
 
     "#form label": {
         fontFamily: "monospace",

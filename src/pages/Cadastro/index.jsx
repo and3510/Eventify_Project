@@ -10,6 +10,7 @@ export default function Cadastro() {
             <Header />
             <section id="pagina">
                 <div id="form">
+                    <h3>Cadastro</h3>
                     <label htmlFor="">Nome</label> <br />
                     <input type="text" /> <br />
                     <label htmlFor="">Email</label> <br />

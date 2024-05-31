@@ -1,6 +1,6 @@
 import {styled} from "@stitches/react"
 
-export const StyledLogin = styled("Login", {
+export const StyledCadastro = styled("Cadastro", {
     "#pagina": {
         width: "97.8%",
         height: "100%",
@@ -18,35 +18,39 @@ export const StyledLogin = styled("Login", {
         borderRadius: "7px",
     },
     
-    "#form": {
+    "#painel": {
         border: "1px solid transparant",
         padding: "40px",
         borderRadius: "15px",
-        backgroundColor: "#e9dced"
+        backgroundColor: "#e9dced",
 
     },
-    "#form h3": {
-        marginTop: "-1px",
-        textAlign: "center",
-        fontFamily: "monospace"
+    "#painel label": {
+        fontFamily: "monospace",
+        fontSize: "18px",
+        marginLeft: "37px"
     },
-
-    "#form label": {
+    "#painel h2": {
         fontFamily: "monospace",
         fontSize: "18px"
     },
 
-    "#form input": {
+    "#painel input": {
         marginBottom: "15px",
         borderRadius: "8px",
         border: "1px solid #222",
         height: "23px",
         fontFamily: "monospace",
-        width: "250px"
+        width: "250px",
+        marginLeft: "37px"
+    },
+    "#painel img": {
+        width: "250px",
+        marginLeft: "35px"
     },
 
-    "#form button": {
-        marginLeft: "90px",
+    "#painel button": {
+        marginLeft: "110px",
         fontFamily: "monospace",
         height: "35px",
         backgroundColor: "#fff",
@@ -54,21 +58,13 @@ export const StyledLogin = styled("Login", {
         borderRadius: "8px",
         marginBottom: "10px",
         cursor: "pointer",
-        transition: "0.3s",
-        marginBottom: "15px"
+        transition: "0.3s"
     },
-    "#form button:hover": {
+    "#painel button:hover": {
 
         border: "1px solid black",
-        borderRadius: "10px",
-        
-        
-    },
-    "#form a": {
-        marginLeft: "50px",
-        fontSize: "17px"
+        borderRadius: "10px"
         
     }
-
 
 })

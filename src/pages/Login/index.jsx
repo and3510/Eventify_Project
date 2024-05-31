@@ -9,6 +9,7 @@ export default function Login() {
             <Header />
             <section id="pagina">
                 <div id="form">
+                    <h3>Login</h3>
                     <label htmlFor="">Email</label> <br />
                     <input type="email" /> <br />
                     <label htmlFor="">Senha</label> <br />
