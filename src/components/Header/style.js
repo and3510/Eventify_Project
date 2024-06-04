@@ -3,15 +3,19 @@ import { styled } from "@stitches/react"
 
 export const StyledHeader = styled("header",{
     "#header": {
-        backgroundColor: "#c9d7ed",
+        // backgroundColor: "#c9d7ed",
+        backgroundColor: "#005f91",
         width: "97%",
         height: "100%",
         display: "flex",
         justifyContent: "space-between",
         fontFamily: "monospace",
         padding: "20px",
-        boxShadow: "1px 1px 4px #c9d7ed",
-        borderRadius: "7px"
+        // boxShadow: "1px 1px 4px #c9d7ed",
+        borderTopRightRadius: "7px",
+        borderTopLeftRadius: "7px",
+
+        borderRadius: "none"
     },
     "#header img": {
         marginLeft: "20px",
@@ -33,7 +37,7 @@ export const StyledHeader = styled("header",{
     },
 
     "#paginas a": {
-        borderBottom: "1px solid #222",
+        borderBottom: "1px solid #fff",
         paddingRight: "15px",
         textDecoration: "none",
         fontSize: "16px",
@@ -41,7 +45,7 @@ export const StyledHeader = styled("header",{
         marginRight: "25px",
         borderRadius: "5px",
         padding: "10px",
-        color: "#222",
+        color: "#fff",
         transition: "0.3s",
         marginTop: "5px",
         backgroundColor: "transparant"

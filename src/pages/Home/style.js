@@ -5,18 +5,13 @@ export const StyledHome = styled("Home", {
         width: "97.8%",
         height: "100%",
         display: "flex",
-        borderBottom: "1px solid #222",
-        borderTop: "1px solid #222",
-        height: "100%",
         justifyContent: "space-evenly",
         fontFamily: "monospace",
         fontSize: "20px",
-        marginTop: "10px",
+        marginTop: "0px",
         padding: "15px",
-        backgroundColor: "#124e60",
-        boxShadow: "1px 1px 4px #124e60",
-        borderRadius: "7px",
-        flexWrap: "wrap"
+        // backgroundColor: "#124e60",
+        backgroundColor: "#3b908d",
     },
     "#eventos_principais":{
         textAlign: "center",
@@ -62,14 +57,17 @@ export const StyledHome = styled("Home", {
         backgroundColor: "#e9dced"
     },
     "#calendar img:hover": {
-        padding: "12px"
+        padding: "5px"
     },
 
+    "calendar nav": {
+        flexWrap: "wrap"
+    },
     "#calendar": {
         display: "flex"
     },
-    "#calendar nav button": {
-        width: "60%",
+    "#calendar nav ul button": {
+        width: "100%",
         marginBottom: "10px",
         height: "35px",
         border: "1px solid #e9dced",
@@ -82,7 +80,42 @@ export const StyledHome = styled("Home", {
     "#calendar nav button:hover": {
         fontSize: "15px",
         backgroundColor: "#fff",
-    }
+    },
+
+    "@media (max-width: 600px)": {
+        "#eventos_principais": {
+            marginRight: "78px",
+        },
+        "#eventos_principais a": {
+            width: "350px",
+        
+        },
+
+        "#calendar img": {
+            marginTop: "20px",
+            width: "300px",
+            marginLeft: "50px"
+        },
+
+        "#calendar nav ul button": {
+            marginLeft: "-10px",
+            fontSize: "8px",
+            width: "80px",
+            marginRight: "60px",
+            padding: "0px"
+        },
+        "#calendar nav button:hover": {
+            fontSize: "10px",
+            backgroundColor: "#fff",
+            fontWeight: "bolder"
+
+        },
+        "#menu": {
+            flexWrap: "wrap"
+        }
+    },
+
+    
 
 
 

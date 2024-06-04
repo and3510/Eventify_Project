@@ -5,6 +5,7 @@ import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 
 const Eventos = ["Pokemon GO", "Campus Party", "Festa na AABB"];
+const NameButtons = ["Localiazação", "Categoria", "Data"];
 
 
 export default function Home() {
@@ -15,18 +16,18 @@ export default function Home() {
 
                 <div id="eventos_principais">
                     <h3>Eventos</h3>
-                    <a href="/eventsign">{Eventos[0]}</a> 
-                    <a href="/eventsign">{Eventos[1]}</a> 
-                    <a href="/eventsign">{Eventos[2]}</a>
+                    <a href="/eventsign" data-evento="Pokemon GO" >{Eventos[0]}</a> 
+                    <a href="/eventsign" data-evento="Campus Party">{Eventos[1]}</a> 
+                    <a href="/eventsign" data-evento="Festa na AABB">{Eventos[2]}</a>
                 </div>
 
                 <div id="calendar">
                     <img src={Calendar} />
                     <nav>
                         <ul>
-                            <button>Localização</button>
-                            <button>Categoria</button>
-                            <button>Data</button>
+                            <button>{NameButtons[0]}</button> <br />
+                            <button>{NameButtons[1]}</button> <br />
+                            <button>{NameButtons[2]}</button> 
                         </ul>
                     </nav>
                 </div>
