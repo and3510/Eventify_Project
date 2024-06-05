@@ -1,29 +1,30 @@
 import React from "react";
-import { StyledEventsign } from "./style"
+import { StyledEventcreate } from "./style"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import Imagem_evento from "../../assets/evente_image.png"
 
 const Eventos = ["Pokemon GO", "Campus Party", "Festa na AABB"];
 
-export default function Eventsign() {
+export default function Eventcreate() {
     return (
-        <StyledEventsign>
+        <StyledEventcreate>
             <Header />
             <section id="pagina">
                 <div id="painel">
-                    <h1>Evento: {Eventos[0]}</h1>
+                    <h1>Criar Evento</h1>
                     <img src={Imagem_evento} /> <br /> <br />
-                    <a href="/eventabout">Sobre o Evento</a> <br />
-                    <label htmlFor="">Nome</label> <br />
+                    <label htmlFor="">Nome do Evento</label> <br />
                     <input type="text" /> <br />
-                    <label htmlFor="">Telefone</label> <br />
-                    <input type="tel" /> <br />
-                    <button>Se Inscrever</button>
+                    <label htmlFor="">Data</label> <br />
+                    <input type="date" /> <br />
+                    <label htmlFor="">Horario</label> <br />
+                    <input type="time" /> <br />
+                    <button>Criar o evento</button>
                 </div>
             </section>
             <Footer />
             
-        </StyledEventsign>
+        </StyledEventcreate>
     )
 }

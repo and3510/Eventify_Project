@@ -1,21 +1,17 @@
 import {styled} from "@stitches/react"
 
-export const StyledCadastro = styled("Cadastro", {
+export const StyledEventsign = styled("Eventsign", {
     "#pagina": {
         width: "97.8%",
         height: "100%",
         display: "flex",
-        borderBottom: "1px solid #222",
-        borderTop: "1px solid #222",
         height: "100%",
         justifyContent: "space-evenly",
         fontFamily: "monospace",
         fontSize: "20px",
-        marginTop: "10px",
+        marginTop: "0px",
         padding: "15px",
-        backgroundColor: "#124e60",
-        boxShadow: "1px 1px 4px #124e60",
-        borderRadius: "7px",
+        backgroundColor: "#3b908d",
     },
     
     "#painel": {
@@ -23,7 +19,12 @@ export const StyledCadastro = styled("Cadastro", {
         padding: "40px",
         borderRadius: "15px",
         backgroundColor: "#e9dced",
+        boxShadow: "0px 0px 5px #222 "
 
+    },
+    "#painel a": {
+        display: "flex",
+        justifyContent: "center"
     },
     "#painel label": {
         fontFamily: "monospace",

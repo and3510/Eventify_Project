@@ -5,24 +5,21 @@ export const StyledLogin = styled("Login", {
         width: "97.8%",
         height: "100%",
         display: "flex",
-        borderBottom: "1px solid #222",
-        borderTop: "1px solid #222",
         height: "100%",
         justifyContent: "space-evenly",
         fontFamily: "monospace",
         fontSize: "20px",
-        marginTop: "10px",
+        marginTop: "0px",
         padding: "15px",
-        backgroundColor: "#124e60",
-        boxShadow: "1px 1px 4px #124e60",
-        borderRadius: "7px",
+        backgroundColor: "#3b908d",
     },
     
     "#form": {
         border: "1px solid transparant",
         padding: "40px",
         borderRadius: "15px",
-        backgroundColor: "#e9dced"
+        backgroundColor: "#e9dced",
+        boxShadow: "0px 0px 5px #222 "
 
     },
     "#form h3": {

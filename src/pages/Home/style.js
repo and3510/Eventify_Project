@@ -54,7 +54,8 @@ export const StyledHome = styled("Home", {
         height: "280px",
         borderRadius: "10px",
         transition: "0.3s",
-        backgroundColor: "#e9dced"
+        backgroundColor: "#e9dced",
+        marginLeft: "20px"
     },
     "#calendar img:hover": {
         padding: "5px"
@@ -82,7 +83,7 @@ export const StyledHome = styled("Home", {
         backgroundColor: "#fff",
     },
 
-    "@media (max-width: 600px)": {
+    "@media (max-width: 950px)": {
         "#eventos_principais": {
             marginRight: "78px",
         },

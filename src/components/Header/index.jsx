@@ -13,7 +13,7 @@ export default function Header() {
             <a href="/"> <img src={Icon_mapa} /></a>
             
             <nav id="paginas">
-                <a href="">Criar Evento</a>
+                <a href="/eventcreate">Criar Evento</a>
                 <a href="/login">Login</a> 
                 
             </nav>

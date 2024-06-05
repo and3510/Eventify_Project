@@ -1,6 +1,6 @@
 import {styled} from "@stitches/react"
 
-export const StyledCadastro = styled("Cadastro", {
+export const StyledEventcreate = styled("Eventcreate", {
     "#pagina": {
         width: "97.8%",
         height: "100%",
@@ -14,7 +14,7 @@ export const StyledCadastro = styled("Cadastro", {
         backgroundColor: "#3b908d",
     },
     
-    "#form": {
+    "#painel": {
         border: "1px solid transparant",
         padding: "40px",
         borderRadius: "15px",
@@ -22,28 +22,32 @@ export const StyledCadastro = styled("Cadastro", {
         boxShadow: "0px 0px 5px #222 "
 
     },
-    "#form h3": {
-        marginTop: "-1px",
-        textAlign: "center",
-        fontFamily: "monospace"
+    "#painel h1": {
+        display: "flex",
+        justifyContent: "center",
     },
-
-    "#form label": {
+    "#painel label": {
         fontFamily: "monospace",
-        fontSize: "18px"
+        fontSize: "18px",
+        marginLeft: "36px"
     },
 
-    "#form input": {
+    "#painel input": {
         marginBottom: "15px",
         borderRadius: "8px",
         border: "1px solid #222",
         height: "23px",
         fontFamily: "monospace",
-        width: "250px"
+        width: "250px",
+        marginLeft: "37px"
+    },
+    "#painel img": {
+        width: "250px",
+        marginLeft: "28px"
     },
 
-    "#form button": {
-        marginLeft: "80px",
+    "#painel button": {
+        marginLeft: "90px",
         fontFamily: "monospace",
         height: "35px",
         backgroundColor: "#fff",
@@ -53,7 +57,7 @@ export const StyledCadastro = styled("Cadastro", {
         cursor: "pointer",
         transition: "0.3s"
     },
-    "#form button:hover": {
+    "#painel button:hover": {
 
         border: "1px solid black",
         borderRadius: "10px"

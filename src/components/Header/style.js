@@ -14,8 +14,8 @@ export const StyledHeader = styled("header",{
         // boxShadow: "1px 1px 4px #c9d7ed",
         borderTopRightRadius: "7px",
         borderTopLeftRadius: "7px",
-
-        borderRadius: "none"
+        borderRadius: "none",
+        marginRight: "20px",
     },
     "#header img": {
         marginLeft: "20px",
