@@ -10,11 +10,11 @@ const EventSubscribe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica para enviar os dados do formulário para o servidor
-    console.log('Nome:', name);
-    console.log('Email:', email);
-    console.log('Phone:', phone);
-    navigate('/thank-you'); // Redireciona para uma página de agradecimento após a inscrição
+   
+    console.log('Nome', name);
+    console.log('E-mail', email);
+    console.log('Telefone', phone);
+    navigate('/thank-you'); 
   };
 
   return (
