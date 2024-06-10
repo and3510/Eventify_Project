@@ -1,54 +1,65 @@
-// src/pages/EventSubscribe/style.js
 import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  background-color: #f9f9f9;
+  background-color: #008080;
+  font-family: 'Inter', sans-serif;
 `;
 
 export const FormContainer = styled.div`
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #46567C; 
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  height: 500px;
 `;
 
 export const Title = styled.h1`
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
   margin-bottom: 20px;
-  color: #333333;
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 300px;
 `;
 
 export const Label = styled.label`
-  margin-bottom: 10px;
   font-weight: bold;
-  color: #555555;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
 `;
 
 export const Input = styled.input`
-  padding: 8px;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #39435C;
+  font-size: 16px;
+  color: #FFFFFF;
 `;
 
 export const Button = styled.button`
-  padding: 10px;
-  color: #ffffff;
-  background-color: #007bff;
+  padding: 14px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  background-color: #34973E;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
   &:hover {
-    background-color: #0056b3;
+    background-color: #2d7e33;
   }
 `;
+
