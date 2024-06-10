@@ -10,17 +10,16 @@ export const StyledCadastro = styled("Cadastro", {
         padding: "15px",
         justifyContent: "space-evenly",
         marginTop: "30px",
+        marginLeft: "-30px"
     },
     "#welcomesite": {
         backgroundColor: "transparent",
         alignContent: "center",
         color: "white",
         padding: "70px",
-        borderTopLeftRadius: "16px",
-        borderBottomLeftRadius: "16px",
         fontFamily: "arial",
         fontSize: "55px",
-        marginLeft: "225px"
+        marginLeft: "125px"
     },
     
     "#form": {

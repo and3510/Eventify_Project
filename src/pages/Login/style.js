@@ -9,7 +9,6 @@ export const StyledLogin = styled("Login", {
         fontFamily: "monospace",
         fontSize: "20px",
         padding: "15px",
-        marginLeft: "190px",
         justifyContent: "center",
         marginTop: "50px",
     },

@@ -10,12 +10,13 @@ export default function Header() {
 
             <section id="header"> 
             
-            <a href="/"> Eventify</a>
+            <a href="/home"> Eventify</a>
             
             <nav id="paginas">
+                <a >Inscrições</a>
                 <a href="/eventcreate">Criar Evento</a>
                 <a >Gerenciar Eventos</a> 
-                <a href="/login">Log out</a> 
+                <a href="/">Log out</a> 
                 <img src={Icon_Personal} />
                 
             </nav>

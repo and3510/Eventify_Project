@@ -2,16 +2,18 @@ import {styled} from "@stitches/react"
 
 export const StyledHome = styled("Home", {
     "#menu":{
-        width: "97.8%",
-        height: "100%",
+        width: "100.8%",
+        height: "410px",
         display: "flex",
         justifyContent: "space-evenly",
         fontFamily: "monospace",
         fontSize: "20px",
         marginTop: "0px",
         padding: "15px",
-        // backgroundColor: "#124e60",
-        backgroundColor: "#3b908d",
+        backgroundColor: "#2F4858",
+        borderBottomLeftRadius: "7px",
+        borderBottomRightRadius: "7px",
+        paddingTop: "80px"
     },
     "#eventos_principais":{
         textAlign: "center",
@@ -19,9 +21,10 @@ export const StyledHome = styled("Home", {
         borderRadius: "10px",
         padding: "25px",
         fontFamily: "monospace",
-        paddingTop: "10px",
+        paddingTop: "0px",
         backgroundColor: "#e9dced",
         marginLeft: "65px",
+        height: "55%"
 
     },
     "#eventos_principais h3": {
@@ -50,17 +53,13 @@ export const StyledHome = styled("Home", {
     },
     "#calendar img": {
         border: "1px solid none ",
-        width: "410px",
+        width: "480px",
         height: "280px",
         borderRadius: "10px",
         transition: "0.3s",
         backgroundColor: "#e9dced",
         marginLeft: "20px"
     },
-    "#calendar img:hover": {
-        padding: "5px"
-    },
-
     "calendar nav": {
         flexWrap: "wrap"
     },

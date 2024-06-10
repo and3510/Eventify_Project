@@ -2,29 +2,32 @@ import {styled} from "@stitches/react"
 
 export const StyledEventcreate = styled("Eventcreate", {
     "#pagina": {
-        width: "97.8%",
-        height: "100%",
+        width: "100.8%",
         display: "flex",
-        height: "100%",
+        height: "108%",
         justifyContent: "space-evenly",
         fontFamily: "monospace",
         fontSize: "20px",
-        marginTop: "0px",
         padding: "15px",
-        backgroundColor: "#3b908d",
+        backgroundColor: "#2F4858",
+        marginBottom: "10px",
+        borderBottomLeftRadius: "7px",
+        borderBottomRightRadius: "7px",
     },
     
     "#painel": {
+        width: "400px",
         border: "1px solid transparant",
         padding: "40px",
         borderRadius: "15px",
         backgroundColor: "#e9dced",
-        boxShadow: "0px 0px 5px #222 "
+        boxShadow: "0px 0px 5px #222 ",
+        display: "block"
 
     },
     "#painel h1": {
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "center"
     },
     "#painel label": {
         fontFamily: "monospace",
@@ -38,8 +41,28 @@ export const StyledEventcreate = styled("Eventcreate", {
         border: "1px solid #222",
         height: "23px",
         fontFamily: "monospace",
-        width: "250px",
-        marginLeft: "37px"
+        width: "350px",
+        marginLeft: "37px",
+        marginTop: "7px"
+    },
+    "#painel textarea": {
+        marginTop: "7px",
+        marginLeft: "35px",
+        width: "350px",
+        height: "50px",
+        borderRadius: "8px",
+        border: "1px solid #222",
+    },
+    "#painel select": {
+        marginTop: "7px",
+        marginBottom: "15px",
+        marginLeft: "35px",
+        width: "350px",
+        height: "30px",
+        backgroundColor: "#fff",
+        borderRadius: "8px",
+        border: "1px solid #222",
+
     },
     "#painel img": {
         width: "250px",
@@ -47,21 +70,30 @@ export const StyledEventcreate = styled("Eventcreate", {
     },
 
     "#painel button": {
-        marginLeft: "90px",
         fontFamily: "monospace",
-        height: "35px",
+        height: "50px",
         backgroundColor: "#fff",
-        border: "1px solid #fff",
+        border: "1px solid transparent",
         borderRadius: "8px",
         marginBottom: "10px",
         cursor: "pointer",
-        transition: "0.3s"
+        transition: "0.2s",
+        marginBottom: "15px",
+        width: "260px",
+        backgroundColor: "rgba(52, 151, 62, 1)",
+        color: "#fff",
+        marginLeft: "70px",
+        marginTop: "30px"
     },
     "#painel button:hover": {
 
-        border: "1px solid black",
-        borderRadius: "10px"
+
+        border: "1px solid rgba(52, 151, 62, 30)",
+        borderRadius: "10px",
+        height: "55px",
+        fontWeight: "bolder"
         
     }
+
 
 })

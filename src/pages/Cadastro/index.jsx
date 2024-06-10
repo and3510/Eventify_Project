@@ -19,7 +19,7 @@ export default function Cadastro() {
                     <label htmlFor="">Confirmar Senha</label> <br />
                     <input type="password" placeholder="Repita a senha" /> <br />
                     <button>Cadastrar-se</button> <br />
-                    <a href="/login"> Já tem uma Conta?</a>
+                    <a href="/"> Já tem uma Conta?</a>
                 </div>
                 <div id="welcomesite">
                     <h1>Eventify</h1>

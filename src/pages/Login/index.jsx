@@ -10,7 +10,7 @@ export default function Login() {
     const [input1, setInput1] = useState("");
     const [input2, setInput2] = useState("");
 
-    let listaEmail = ['anderson'];
+    let listaEmail = ['and.leao@gmail.com'];
     let listaPassword = ['123'];
 
     function email(e) {
@@ -27,8 +27,10 @@ export default function Login() {
     const shoot = () => {
 
         if (listaEmail.includes(input1) && listaPassword.includes(input2)) {
-            alert("deu certo");
             window.location.href = "/home"
+        }
+        else {
+            alert("Email ou Senha está incorreta");
         }
 
     }
