@@ -22,23 +22,26 @@ const EventSubscribe = () => {
       <FormContainer>
         <Title>Inscreva-se no Evento</Title>
         <Form onSubmit={handleSubmit}>
-          <Label>Nome:</Label>
+          <Label>Nome</Label>
           <Input 
             type="text" 
+            placeholder="Digite seu nome"
             value={name} 
             onChange={(e) => setName(e.target.value)} 
             required 
           />
-          <Label>Email:</Label>
+          <Label>E-mail</Label>
           <Input 
             type="email" 
+            placeholder="Digite seu e-mail"
             value={email} 
             onChange={(e) => setEmail(e.target.value)} 
             required 
           />
-          <Label>Telefone:</Label>
+          <Label>Telefone</Label>
           <Input 
             type="text" 
+            placeholder="Digite seu telefone"
             value={phone} 
             onChange={(e) => setPhone(e.target.value)} 
             required 

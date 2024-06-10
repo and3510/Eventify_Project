@@ -48,6 +48,8 @@ export const Input = styled.input`
   font-size: 16px;
   color: #FFFFFF;
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+  ::placeholder {
+    color: #D3D3D3;
 `;
 
 export const Button = styled.button`
