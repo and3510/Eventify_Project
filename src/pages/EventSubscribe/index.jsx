@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Container, Form, Input, Button } from './style';
+import React, { useState } from 'react';
+import { Container, Form, Input, Button, Label } from './style'; // Importando os estilos atualizados
 import { useNavigate } from 'react-router-dom';
 
 const EventSubscribe = () => {
@@ -21,33 +21,27 @@ const EventSubscribe = () => {
     <Container>
       <h1>Inscreva-se no Evento</h1>
       <Form onSubmit={handleSubmit}>
-        <label>
-          Nome:
-          <Input 
-            type="text" 
-            value={name} 
-            onChange={(e) => setName(e.target.value)} 
-            required 
-          />
-        </label>
-        <label>
-          Email:
-          <Input 
-            type="email" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)} 
-            required 
-          />
-        </label>
-        <label>
-          Telefone:
-          <Input 
-            type="text" 
-            value={phone} 
-            onChange={(e) => setPhone(e.target.value)} 
-            required 
-          />
-        </label>
+        <Label>Nome:</Label>
+        <Input 
+          type="text" 
+          value={name} 
+          onChange={(e) => setName(e.target.value)} 
+          required 
+        />
+        <Label>Email:</Label>
+        <Input 
+          type="email" 
+          value={email} 
+          onChange={(e) => setEmail(e.target.value)} 
+          required 
+        />
+        <Label>Telefone:</Label>
+        <Input 
+          type="text" 
+          value={phone} 
+          onChange={(e) => setPhone(e.target.value)} 
+          required 
+        />
         <Button type="submit">Inscrever-se</Button>
       </Form>
     </Container>
