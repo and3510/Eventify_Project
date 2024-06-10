@@ -28,6 +28,7 @@ export default function Login() {
 
         if (listaEmail.includes(input1) && listaPassword.includes(input2)) {
             alert("deu certo");
+            window.location.href = "/home"
         }
 
     }
@@ -35,21 +36,24 @@ export default function Login() {
 
     return (
         <StyledLogin>
-            <Header />
+
             <section id="pagina">
+                <div id="welcomesite">
+                    <h1 >Eventify</h1>
+                </div>
                 <div id="form">
-                    <h3>Login</h3>
+                    <h3>LOGIN</h3>
                     <label htmlFor="">Email</label> <br />
-                    <input type="email" value={input1} onInput={email} /> <br />
+                    <input type="email" value={input1} onInput={email} placeholder="fulano@gmail.com" /> <br />
                     <label htmlFor="">Senha</label> <br />
-                    <input type="password" value={input2} onInput={password} /> <br />
+                    <input type="password" value={input2} onInput={password} placeholder="12345#"/> <br />
                     <button onClick={shoot} >Entrar</button> <br />
-                    <a href="/cadastro">Não tem Login?</a>
+                    <a href="/cadastro">Não tem Cadastro?</a>
                     
                 </div>
 
             </section>
-            <Footer />
+
             
         </StyledLogin>
     )

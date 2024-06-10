@@ -6,7 +6,7 @@ export const StyledFooter = styled("footer",{
         padding: "10px",
         marginTop: "0px",
         width: "98.57%",
-        height: "170px",
+        height: "100%",
         backgroundColor: "#9fa83c",
         display: "flex",
         justifyContent: "space-evenly",

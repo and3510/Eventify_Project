@@ -2,62 +2,107 @@ import {styled} from "@stitches/react"
 
 export const StyledCadastro = styled("Cadastro", {
     "#pagina": {
-        width: "97.8%",
-        height: "100%",
+        width: "100%",
+        height: "530px",
         display: "flex",
-        height: "100%",
-        justifyContent: "space-evenly",
         fontFamily: "monospace",
         fontSize: "20px",
-        marginTop: "0px",
         padding: "15px",
-        backgroundColor: "#3b908d",
+        justifyContent: "space-evenly",
+        marginTop: "30px",
+    },
+    "#welcomesite": {
+        backgroundColor: "transparent",
+        alignContent: "center",
+        color: "white",
+        padding: "70px",
+        borderTopLeftRadius: "16px",
+        borderBottomLeftRadius: "16px",
+        fontFamily: "arial",
+        fontSize: "55px",
+        marginLeft: "225px"
     },
     
     "#form": {
-        border: "1px solid transparant",
         padding: "40px",
-        borderRadius: "15px",
-        backgroundColor: "#e9dced",
-        boxShadow: "0px 0px 5px #222 "
+        backgroundColor: "rgba(70, 86, 124, 1)",
+        borderRadius: "16px",
+        color: "#fff",
+        paddingTop: "70px",
+        marginLeft: "30px",
+        boxShadow: "4px 1px 10px #222"
 
     },
     "#form h3": {
-        marginTop: "-1px",
+        marginTop: "-10px",
         textAlign: "center",
-        fontFamily: "monospace"
+        fontFamily: "arial"
     },
 
     "#form label": {
-        fontFamily: "monospace",
-        fontSize: "18px"
+        fontFamily: "arial",
+        fontSize: "15px",
     },
 
     "#form input": {
+        marginTop: "6px",
         marginBottom: "15px",
-        borderRadius: "8px",
-        border: "1px solid #222",
-        height: "23px",
+        height: "15px",
         fontFamily: "monospace",
-        width: "250px"
+        width: "250px",
+        backgroundColor: "transparent",
+        border: "1px solid transparent",
+        borderBottom: "1px solid #fff",
+        color: "#fff",
+        transition: "0.2s",
+        backgroundColor: "rgba(47, 72, 88, 1)",
+        border: "1px solid transparent",
+        borderRadius: "5px",
+        height: "30px" ,
+        borderBottom: "1px solid transparent",
+        paddingLeft: "10px"
+    },
+    "#form input:hover ": {
+        backgroundColor: "rgba(47, 72, 88, 1)",
+        border: "1px solid transparent",
+        borderRadius: "5px",
+        height: "30px" ,
+        borderBottom: "1px solid transparent",
+
     },
 
     "#form button": {
-        marginLeft: "80px",
         fontFamily: "monospace",
         height: "35px",
         backgroundColor: "#fff",
-        border: "1px solid #fff",
+        border: "1px solid transparent",
         borderRadius: "8px",
-        marginBottom: "10px",
         cursor: "pointer",
-        transition: "0.3s"
+        transition: "0.2s",
+        marginBottom: "15px",
+        width: "260px",
+        backgroundColor: "rgba(52, 151, 62, 1)",
+        color: "#fff"
     },
     "#form button:hover": {
 
-        border: "1px solid black",
-        borderRadius: "10px"
+        border: "1px solid rgba(52, 151, 62, 30)",
+        borderRadius: "10px",
+        height: "38px",
+        fontWeight: "bolder"
         
+        
+    },    
+    "#form a": {
+        marginLeft: "58px",
+        fontSize: "13px",
+        color: "#fff",
+        textDecoration: "none"
+        
+    },
+    "#form a:hover": {
+        textDecorationLine: "underline",
+        color: "Aqua"
     }
 
 })

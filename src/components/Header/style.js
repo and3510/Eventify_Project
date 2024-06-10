@@ -4,36 +4,30 @@ import { styled } from "@stitches/react"
 export const StyledHeader = styled("header",{
     "#header": {
         // backgroundColor: "#c9d7ed",
-        backgroundColor: "#005f91",
-        width: "97%",
+        backgroundColor: "rgba(70, 86, 124, 1)",
+        width: "132%",
         height: "100%",
-        display: "flex",
+        display: "inline-flex",
         justifyContent: "space-between",
-        fontFamily: "monospace",
+        fontFamily: "arial",
         padding: "20px",
-        // boxShadow: "1px 1px 4px #c9d7ed",
         borderTopRightRadius: "7px",
         borderTopLeftRadius: "7px",
         borderRadius: "none",
-        marginRight: "20px",
-    },
-    "#header img": {
-        marginLeft: "20px",
-        width: "50px",
-        transition: "0.25s"
-    },
-    "#header img:hover ": {
-        width: "60px"
-
     },
     "#header a": {
         textDecoration: "none",
-        color: "#222"
+        color: "#fff",
+        fontWeight: "bold",
+        fontSize: "25px",
+        marginTop: "15px",
+        marginLeft: "5px"
     },
     "#paginas": {
         display: "flex",
         flexWrap: "wrap",
-        marginRight: "20px"
+        marginRight: "20px",
+        marginTop: "3px"
     },
 
     "#paginas a": {
@@ -43,15 +37,13 @@ export const StyledHeader = styled("header",{
         fontSize: "16px",
         height: "20px",
         marginRight: "25px",
-        borderRadius: "5px",
         padding: "10px",
         color: "#fff",
-        transition: "0.3s",
+        transition: "0.1s",
         marginTop: "5px",
         backgroundColor: "transparant"
     },
     "#paginas a:hover ": {
-        padding: "12px",
         color: "#222",
         marginRight: "20px",
         backgroundColor: "#e9dced",
@@ -59,5 +51,12 @@ export const StyledHeader = styled("header",{
         borderRadius: "15px",
         border: "none"
 
+    },
+    "#paginas img": {
+        width: "50px",
+        backgroundColor: "#fff",
+        borderRadius: "50px",
+        border: "5px solid rgba(70, 86, 124, 1)",
+        marginTop: "-5px"
     }
 })

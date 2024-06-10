@@ -1,6 +1,6 @@
 import React from "react";
 import {StyledHeader} from './style';
-import Icon_mapa from "../../assets/icon-event.png"
+import Icon_Personal from "../../assets/icon_personal.png"
 
 
 
@@ -10,11 +10,13 @@ export default function Header() {
 
             <section id="header"> 
             
-            <a href="/"> <img src={Icon_mapa} /></a>
+            <a href="/"> Eventify</a>
             
             <nav id="paginas">
                 <a href="/eventcreate">Criar Evento</a>
-                <a href="/login">Login</a> 
+                <a >Gerenciar Eventos</a> 
+                <a href="/login">Log out</a> 
+                <img src={Icon_Personal} />
                 
             </nav>
             </section>
