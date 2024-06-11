@@ -1,7 +1,7 @@
-import { StyledHome } from "./style";
-import Calendar from "../../assets/calendar.webp";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import { StyledHome } from './style';
+import CalendarComponent from '../../components/Calendar/Calendar';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 const Eventos = ["Pokemon GO", "Campus Party", "Festa na AABB"];
 const NameButtons = ["Localização", "Categoria", "Data"];
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         <div id="calendar">
-          <img src={Calendar} alt="Calendar" />
+          <CalendarComponent /> 
           <nav>
             <ul>
               <button>{NameButtons[0]}</button> <br />
