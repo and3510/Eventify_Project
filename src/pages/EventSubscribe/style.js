@@ -1,31 +1,46 @@
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 97.7vh;
+  height: 100vh;
   background-color: #008080;
   font-family: 'Inter', sans-serif;
 `;
 
 export const FormContainer = styled.div`
+  position: relative; 
   background-color: #46567C; 
   padding: 40px;
   border-radius: 16px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 400px;
   height: 500px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 `;
 
 export const Title = styled.h1`
-  font-weight: 1px;
+  font-weight: bold;
   font-size: 24px;
   color: #FFFFFF;
   text-align: center;
-  margin-bottom: 20px;
   width: 190px;
-  margin-left: 105px;
+  margin: 0 auto 20px auto;
 `;
 
 export const Form = styled.form`
@@ -47,9 +62,9 @@ export const Input = styled.input`
   background-color: #39435C;
   font-size: 16px;
   color: #FFFFFF;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
-  ::placeholder {
-    color: #D3D3D3;
+  &::placeholder {
+    color: #CCCCCC;
+  }
 `;
 
 export const Button = styled.button`
@@ -63,7 +78,7 @@ export const Button = styled.button`
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 20px;
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   &:hover {
     background-color: #2d7e33;
   }
