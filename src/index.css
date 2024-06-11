@@ -12,9 +12,3 @@ body {
 }
 
   
-
-@media (max-width: 950px) {
-    body {
-        overflow-x: hidden;
-    }
-}

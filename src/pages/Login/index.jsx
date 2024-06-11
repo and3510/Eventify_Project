@@ -1,8 +1,9 @@
 import React from "react";
 import { StyledLogin } from "./style";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import { useState } from "react";
+
+
+// localStorage.clear()
 
 
 export default function Login() {
@@ -10,8 +11,6 @@ export default function Login() {
     const [input1, setInput1] = useState("");
     const [input2, setInput2] = useState("");
 
-    let listaEmail = ['and.leao@gmail.com'];
-    let listaPassword = ['123'];
 
     function email(e) {
         setInput1(e.target.value);
@@ -24,13 +23,21 @@ export default function Login() {
     }
 
 
+
     const shoot = () => {
 
-        if (listaEmail.includes(input1) && listaPassword.includes(input2)) {
-            window.location.href = "/home"
+        const storedUsuario = localStorage.getItem('usuario1');
+        const jsonData = JSON.parse(storedUsuario);
+        const dadosObject = jsonData.dados;
+        const email1 = dadosObject.email;
+        const senha = dadosObject.senha;
+
+        if (input1 == email1 && input2 == senha) {
+           window.location.href="/home";
         }
+
         else {
-            alert("Email ou Senha está incorreta");
+           alert("erro")
         }
 
     }

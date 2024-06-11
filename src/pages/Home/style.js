@@ -22,6 +22,7 @@ export const StyledHome = styled("div", {
     paddingTop: "10px",
     backgroundColor: "#e9dced",
     marginLeft: "65px",
+    height: "275px"
   },
   "#eventos_principais h3": {
     fontFamily: "monospace",
@@ -63,7 +64,6 @@ export const StyledHome = styled("div", {
   },
   "#calendar": {
     display: "flex",
-    flexDirection: "column", // Adicionando para acomodar o novo calendário
     alignItems: "center",
   },
   "#calendar nav ul button": {

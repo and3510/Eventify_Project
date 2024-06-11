@@ -37,7 +37,6 @@ export default function Home() {
           </nav>
         </div>
       </section>
-      <Footer />
     </StyledHome>
   );
 }
