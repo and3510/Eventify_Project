@@ -48,6 +48,16 @@ export const StyledHeader = styled("header",{
         border: "none"
 
     },
+    "#paginas p": {
+        paddingRight: "15px",
+        fontSize: "13px",
+        marginRight: "20px",
+        padding: "10px",
+        color: "#fff",
+        marginTop: "6px",
+        fontWeight: "bolder",
+        
+    },
     "#paginas img": {
         width: "50px",
         backgroundColor: "#fff",
