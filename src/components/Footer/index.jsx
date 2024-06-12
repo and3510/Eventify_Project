@@ -9,19 +9,8 @@ export default function Footer() {
 
             <section id="footer"> 
                 <nav>
-                    <h2>Contatos:</h2>
-                    <ul>
-                        <li>
-                            Telefone: 86 99999-9999
-                        </li>
-                        <li>
-                            Email: eventify@gmail.com
-                        </li>
-                    </ul>
-                </nav>
-                <nav>
-                    <h2>Sobre:</h2>
-                    <p>Eventify - site que organiza e facilita os eventos dos participantes </p>
+                    <p>Contate-nos</p>
+                    <p>contato@empresa.com</p>
                     
                 </nav>
             </section>

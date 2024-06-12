@@ -3,17 +3,24 @@ import { styled } from "@stitches/react";
 
 export const StyledHome = styled("div", {
   "#menu": {
-    width: "97.8%",
+    width: "100.8%",
     height: "100%",
     display: "flex",
-    justifyContent: "space-evenly",
+    justifyContent: "space-around",
     fontFamily: "monospace",
     fontSize: "20px",
-    marginTop: "0px",
     padding: "15px",
-    backgroundColor: "#3b908d",
+    backgroundColor: "#46567C",
+  },
+  "#menu h1": {
+    color: "#fff",
+
   },
   "#eventos_principais": {
+    display: "block",
+    marginTop: "50px"
+  },
+  "#eventos_principais nav": {
     textAlign: "center",
     border: "1px solid transparent",
     borderRadius: "10px",
@@ -22,10 +29,12 @@ export const StyledHome = styled("div", {
     paddingTop: "10px",
     backgroundColor: "#e9dced",
     marginLeft: "65px",
-    height: "275px"
+    height: "70%",
+    width: "65%"
   },
-  "#eventos_principais h3": {
+  "#eventos_principais h1": {
     fontFamily: "monospace",
+    textAlign: "center",
   },
   "#eventos_principais a": {
     borderBottom: "1px solid #222",
@@ -60,14 +69,20 @@ export const StyledHome = styled("div", {
     padding: "5px",
   },
   "#calendar nav": {
-    flexWrap: "wrap",
+    display: "flex",
+    marginLeft: "-45px"
   },
   "#calendar": {
-    display: "flex",
+    
+    marginTop: "50px",
+    display: "block",
     alignItems: "center",
   },
+  "#calendar h1": {
+    textAlign: "center"
+  },
   "#calendar nav ul button": {
-    width: "100%",
+    width: "150px",
     marginBottom: "10px",
     height: "35px",
     border: "1px solid #e9dced",
@@ -76,6 +91,7 @@ export const StyledHome = styled("div", {
     fontSize: "15px",
     backgroundColor: "#e9dced",
     transition: "0.3s",
+    marginRight: "10px"
   },
   "#calendar nav button:hover": {
     fontSize: "15px",

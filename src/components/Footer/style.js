@@ -5,9 +5,9 @@ export const StyledFooter = styled("footer",{
     "#footer": {
         padding: "10px",
         marginTop: "0px",
-        width: "98.57%",
+        width: "101.5%",
         height: "100%",
-        backgroundColor: "#9fa83c",
+        backgroundColor: "#294747",
         display: "flex",
         justifyContent: "space-evenly",
         borderBottomRightRadius: "7px",
@@ -30,27 +30,16 @@ export const StyledFooter = styled("footer",{
         marginLeft: "20px",
         border: "1px solid transparant",
         padding: "10px",
-        width: "70%",
-        backgroundColor: "#e9dced",
+        backgroundColor: "transparent",
         borderRadius: "10px",
-        height: "130px"
-    },
-
-    "#footer h2": {
-        fontFamily: "monospace",
-        marginLeft: "20px"
-    },
-
-    "#footer li": {
-        fontFamily: "monospace",
-        marginTop: "4px",
-        fontSize: "15px"
     },
     "#footer nav p":  {
+        textAlign: "center",
         fontFamily: "monospace",
         marginLeft: "20px",
         marginTop: "-5px",
-        fontSize: "14px"
+        fontSize: "14px",
+        color: "#fff"
     }
 
 })

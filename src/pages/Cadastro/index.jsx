@@ -67,6 +67,8 @@ export default function Cadastro() {
             
             localStorage.setItem(`usuario1`, JSON.stringify({dados}));
 
+            window.location.href="/"
+
         }
 
     }

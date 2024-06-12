@@ -32,7 +32,7 @@ export default function Login() {
         const email1 = dadosObject.email;
         const senha = dadosObject.senha;
 
-        if (input1 == email1 && input2 == senha) {
+        if (input1 == email1 && input2 == senha || localStorage.getItem('usuario1')) {
            window.location.href="/home";
         }
 

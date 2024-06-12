@@ -3,7 +3,7 @@ import { styled } from "@stitches/react"
 
 export const StyledHeader = styled("header",{
     "#header": {
-        backgroundColor: "rgba(70, 86, 124, 1)",
+        backgroundColor: "#2223",
         width: "100%",
         height: "100%",
         display: "flex",
@@ -59,10 +59,10 @@ export const StyledHeader = styled("header",{
         
     },
     "#paginas img": {
-        width: "50px",
-        backgroundColor: "#fff",
+        width: "60px",
+        backgroundColor: "linear-gradient(to bottom right, rgba(233, 100, 121, 0.8), rgba(255, 127, 80, 0.8), rgba(184, 94, 147, 0.8), rgba(123, 93, 148, 0.8))",
         borderRadius: "50px",
-        border: "5px solid rgba(70, 86, 124, 1)",
+        border: "5px solid #transparent",
         marginTop: "-5px",
     }
 })
