@@ -18,7 +18,8 @@ export const StyledHome = styled("div", {
   },
   "#eventos_principais": {
     display: "block",
-    marginTop: "50px"
+    marginTop: "50px",
+
   },
   "#eventos_principais nav": {
     textAlign: "center",
@@ -28,9 +29,10 @@ export const StyledHome = styled("div", {
     fontFamily: "monospace",
     paddingTop: "10px",
     backgroundColor: "#e9dced",
-    marginLeft: "65px",
-    height: "70%",
-    width: "65%"
+    marginLeft: "30px",
+    width: "65%",
+    overflowY: "scroll",
+    height: "310px"
   },
   "#eventos_principais h1": {
     fontFamily: "monospace",

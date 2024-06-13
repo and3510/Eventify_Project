@@ -4,56 +4,74 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 
+
 const NameButtons = ["Localização", "Categoria", "Data"];
 
 
 
 export default function Home() {
 
-  function check() {
-    let dados = {
-      nome: ["Pixelmon","Campus Party", "Festa na AABB"],
-      data: ["12/04/25","01/05/24","05/06/23"],
-      horario: ["20:45","19:25","10:25"]
-    };
-    localStorage.setItem(`evento`, JSON.stringify({dados}));
+  
+  const dados = [ {
+    nome: 'Pixelmon', 
+    data: '12/04/25', horario: '20:45', id: '0',
+  },
+  {
+    nome: 'Campus Party', 
+    data: '01/05/24', horario: '20:45', id: '1',
+  },
+  {
+    nome: 'Campus Party', 
+    data: '01/05/24', horario: '20:45', id: '2',
+  },
+  ];
+  localStorage.setItem(`evento`, JSON.stringify({dados}));
+  // teste = localStorage.setItem(`evento`, JSON.stringify({dados}));
 
-  };
+  /*let eventos = JSON.parse(localStorage.getItem('eventos')) || [];
 
-  function grow() {
-    
+  const novoProduto = {nome: "Produto 4", data: '01/05/24', horario: '20:45', id: "5" };
+  eventos.push(novoProduto);
+
+  // Atualizar localStorage com o array atualizado
+  localStorage.setItem('eventos', JSON.stringify(eventos));
+  */
+
+  const eventos = localStorage.getItem('evento');
+  const valores = JSON.parse(eventos);
+  const nome = valores.nome;
+  const data = valores.data;
+  const horario = valores.horario;
+
+  /*function addEvent(idEvent) {
+    let event = eventos.find(function(event) {
+      return event.id == idEvent;
+    });
   }
+  */
 
-  const storedUsuario = localStorage.getItem('evento');
-  const jsonData = JSON.parse(storedUsuario);
-  const dadosObject = jsonData.dados;
-  const nome = dadosObject.nome;
-  const data = dadosObject.data;
-  const horario = dadosObject.horario;
 
-  check();
+
   return (
     <StyledHome>
       <Header />
+
       <section id="menu">
-      
+
         <div id="eventos_principais">
         <h1>Eventos Principais</h1>
         <nav>
-          <h3>Eventos</h3>
-          <a href="/subscribe" data-evento="Pokemon GO">
-            {nome[0]} <br />
-            {data[0]}-{horario[0]}
-          </a>
-          <br />
-          <a href="/subscribe" data-evento="Campus Party">
-            {nome[1]}<br />
-            {data[1]}-{horario[1]}
-          </a>
-          <br />
-          <a href="/subscribe" data-evento="Festa na AABB">
-            {nome[2]} <br /> {data[2]}-{horario[2]}
-          </a>
+        <h3>Eventos</h3>
+        {dados.map(function(dados) {
+          return (
+            <div key={dados.id}>
+              <a href="/subscribe" >
+              {dados.nome} <br />
+              {dados.data}-{dados.horario}
+              </a>  
+            </div>
+          )
+        })}
         </nav>
         </div>
         
@@ -74,3 +92,4 @@ export default function Home() {
 
   );
 }
+

@@ -60,7 +60,7 @@ export const StyledHeader = styled("header",{
     },
     "#paginas img": {
         width: "60px",
-        backgroundColor: "linear-gradient(to bottom right, rgba(233, 100, 121, 0.8), rgba(255, 127, 80, 0.8), rgba(184, 94, 147, 0.8), rgba(123, 93, 148, 0.8))",
+        backgroundColor: "#fff",
         borderRadius: "50px",
         border: "5px solid #transparent",
         marginTop: "-5px",

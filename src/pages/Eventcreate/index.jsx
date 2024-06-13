@@ -32,6 +32,8 @@ export default function Eventcreate() {
                     <button>Criar o evento</button>
                 </div>
             </section>
+            <Footer />
+            
             
         </StyledEventcreate>
     )

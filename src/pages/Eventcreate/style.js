@@ -9,10 +9,7 @@ export const StyledEventcreate = styled("Eventcreate", {
         fontFamily: "monospace",
         fontSize: "20px",
         padding: "15px",
-        backgroundColor: "#2F4858",
-        marginBottom: "10px",
-        borderBottomLeftRadius: "7px",
-        borderBottomRightRadius: "7px",
+        backgroundColor: "#46567C",
     },
     
     "#painel": {
@@ -20,19 +17,21 @@ export const StyledEventcreate = styled("Eventcreate", {
         border: "1px solid transparant",
         padding: "40px",
         borderRadius: "15px",
-        backgroundColor: "#e9dced",
+        backgroundColor: "#2F4858",
         boxShadow: "0px 0px 5px #222 ",
         display: "block"
 
     },
     "#painel h1": {
         display: "flex",
-        justifyContent: "center"
+        justifyContent: "center",
+        color: "#fff"
     },
     "#painel label": {
         fontFamily: "monospace",
         fontSize: "18px",
-        marginLeft: "36px"
+        marginLeft: "36px",
+        color: "#fff"
     },
 
     "#painel input": {
