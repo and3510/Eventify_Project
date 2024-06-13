@@ -89,7 +89,6 @@ export const StyledEventcreate = styled("Eventcreate", {
 
         backgroundColor: "#2d7e33",
  
-        
     }
 
 

@@ -6,6 +6,7 @@ import Cadastro from "./pages/Cadastro";
 import EventSubscribe from "./pages/EventSubscribe";
 import Eventcreate from "./pages/Eventcreate";
 
+
 export default function AppRoutes() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ export default function AppRoutes() {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/subscribe" element={<EventSubscribe />} />
         <Route path="/eventcreate" element={<Eventcreate />} />
+
       </Routes>
     </BrowserRouter>
   );
