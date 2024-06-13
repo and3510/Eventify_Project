@@ -9,7 +9,7 @@ export const StyledEventcreate = styled("Eventcreate", {
         fontFamily: "monospace",
         fontSize: "20px",
         padding: "15px",
-        backgroundColor: "#46567C",
+        backgroundColor: "transparent",
     },
     
     "#painel": {
@@ -17,7 +17,7 @@ export const StyledEventcreate = styled("Eventcreate", {
         border: "1px solid transparant",
         padding: "40px",
         borderRadius: "15px",
-        backgroundColor: "#2F4858",
+        backgroundColor: "#46567C",
         boxShadow: "0px 0px 5px #222 ",
         display: "block"
 
@@ -68,7 +68,7 @@ export const StyledEventcreate = styled("Eventcreate", {
         marginLeft: "28px"
     },
 
-    "#painel button": {
+    "#criarEvento": {
         fontFamily: "monospace",
         height: "50px",
         backgroundColor: "#fff",
@@ -83,14 +83,12 @@ export const StyledEventcreate = styled("Eventcreate", {
         color: "#fff",
         marginLeft: "70px",
         marginTop: "30px"
+
     },
-    "#painel button:hover": {
+    "#criarEvento:hover": {
 
-
-        border: "1px solid rgba(52, 151, 62, 30)",
-        borderRadius: "10px",
-        height: "55px",
-        fontWeight: "bolder"
+        backgroundColor: "#2d7e33",
+ 
         
     }
 

@@ -2,15 +2,20 @@ import React from "react";
 import { StyledEventcreate } from "./style"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import BackButton from '../../components/BackButton';
 
 const Eventos = ["Pokemon GO", "Campus Party", "Festa na AABB"];
 
 export default function Eventcreate() {
     return (
         <StyledEventcreate>
-            <Header />
             <section id="pagina">
+            <BackButton /> 
+            
                 <div id="painel">
+
+                    
+                    
                     <h1>Criar Novo Evento</h1>
                     <label htmlFor="">Nome do Evento</label> <br />
                     <input type="text" /> <br />
@@ -29,12 +34,11 @@ export default function Eventcreate() {
                     <input type="number" /> <br />
                     <label htmlFor="">Descrição</label> <br />
                     <textarea name="" id=""></textarea> <br />
-                    <button>Criar o evento</button>
+                    
+                    <button id="criarEvento">Criar o evento</button>
                 </div>
             </section>
-            <Footer />
-            
-            
+                        
         </StyledEventcreate>
     )
 }
