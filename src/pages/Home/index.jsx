@@ -21,35 +21,56 @@ export default function Home() {
     data: '01/05/24', horario: '20:45', id: '1',
   },
   {
-    nome: 'Campus Party', 
-    data: '01/05/24', horario: '20:45', id: '2',
+    nome: 'Festa na AABB', 
+    data: '10/08/24', horario: '17:45', id: '2',
   },
   ];
   localStorage.setItem(`evento`, JSON.stringify({dados}));
-  // teste = localStorage.setItem(`evento`, JSON.stringify({dados}));
 
-  /*let eventos = JSON.parse(localStorage.getItem('eventos')) || [];
 
-  const novoProduto = {nome: "Produto 4", data: '01/05/24', horario: '20:45', id: "5" };
-  eventos.push(novoProduto);
 
-  // Atualizar localStorage com o array atualizado
-  localStorage.setItem('eventos', JSON.stringify(eventos));
-  */
 
-  const eventos = localStorage.getItem('evento');
-  const valores = JSON.parse(eventos);
-  const nome = valores.nome;
-  const data = valores.data;
-  const horario = valores.horario;
+  const handleBotao1Click = (id) => {
+    if (id == 0) {
+    let pagina = [ {
+      nome: 'Pixelmon', 
+      data: '12/04/25', 
+      horario: '20:45', 
+      id: '0',
+      categoria: "Games e Anime",
+      info: 'Explorar um mundo vasto e vibrante cheio de Pokémon selvagens para capturar e treinar.'
+    }]
+ 
+      localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
+      
+    }
+    else if (id == 1) {
 
-  /*function addEvent(idEvent) {
-    let event = eventos.find(function(event) {
-      return event.id == idEvent;
-    });
-  }
-  */
+    let pagina = [ {
+      nome: 'Campus', 
+      data: '01/05/24', 
+      horario: '20:45', 
+      id: '1',
+      categoria: "Tecnologia, Inovação e Games",
+      info: 'Chamada para Aventura! A Campus Party te Convida para uma Jornada Inesquecível! Prepare-se para imergir em um universo de inovação, tecnologia e criatividade na Campus Party, o maior festival de tecnologia, empreendedorismo e ciência do mundo!'
+    }]
 
+      localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
+    }
+
+    else if (id == 2) {
+      let pagina = [ {
+        nome: 'Festa na AABB', 
+        data: '07/03/22', 
+        horario: '20:45', 
+        id: '2',
+        categoria: "Bebida, Rock, Sports",
+        info: 'É com imensa alegria que os convidamos para celebrar conosco a festa da AABB. Será uma noite, repleta de festas, com música, comida, bebida, diversão.'
+      }]
+  
+        localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
+    }
+  };
 
 
   return (
@@ -65,7 +86,7 @@ export default function Home() {
         {dados.map(function(dados) {
           return (
             <div key={dados.id}>
-              <a href="/subscribe" >
+              <a onClick={() => handleBotao1Click(dados.id)} href="/subscribe" >
               {dados.nome} <br />
               {dados.data}-{dados.horario}
               </a>  

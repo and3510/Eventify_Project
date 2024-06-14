@@ -11,7 +11,8 @@ export const StyledFooter = styled("footer",{
         display: "flex",
         justifyContent: "space-evenly",
         borderBottomRightRadius: "7px",
-        borderBottomLeftRadius: "7px"
+        borderBottomLeftRadius: "7px",
+        marginBottom: "5px"
     },
     "@media (max-width: 600px)": {
         "#footer": {

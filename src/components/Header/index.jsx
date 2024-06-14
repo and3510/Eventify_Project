@@ -23,9 +23,8 @@ export default function Header() {
             <a href="/home"> Eventify</a>
             
             <nav id="paginas">
-                <a >Inscrições</a>
                 <a href="/eventcreate">Criar Evento</a>
-                <a >Gerenciar Eventos</a> 
+                <a >Meus Eventos</a> 
                 <a onClick={limpar} href="/">Log out</a> 
                 <img src={Icon_Personal} />
                 <p>{nome}</p>
