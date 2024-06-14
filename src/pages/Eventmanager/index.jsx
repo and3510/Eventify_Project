@@ -2,13 +2,17 @@ import React from "react";
 import { StyledEventmanager } from "./style"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import BackButton from "../../components/BackButton";
+import { useNavigate } from "react-router-dom";
 
 export default function Eventmanager() {
     return (
         <StyledEventmanager>
             <section className="pagina">
                 <div className="titulo">
+                    <BackButton />
                     <h1><b>Gerenciamento do Evento</b></h1>
+                    
                 </div>
                 <div className="conteudo" display="flex">
                     <div className="desempenho_evento">
@@ -18,7 +22,8 @@ export default function Eventmanager() {
                         <h1>Inscrições</h1>
                         <div className="inscrito">
                             <div className="text"> <h4>Gustavo A. do Vale
-                                <br></br>quer participar do seu Evento!</h4></div>
+                                <br></br>quer participar do seu Evento!</h4>
+                            </div>
                             <div class="botões" > <button type="button" class="aceita">Aceitar</button>
                                 <button type="button" class="recusar">Recusar</button></div>
                         </div>
