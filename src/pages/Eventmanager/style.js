@@ -5,7 +5,7 @@ import {styled} from "@stitches/react"
 
 export const StyledEventmanager = styled("Eventmanager", {
     ".pagina":{
-        border: "1px solid purple",
+        //border: "1px solid purple",
         height: "540px",
         marginRight: "2%",
         marginLeft: "5%",
@@ -15,7 +15,7 @@ export const StyledEventmanager = styled("Eventmanager", {
         
     },
     ".titulo":{
-        border: "1px solid red",
+        //border: "1px solid red",
         color: "white",
         textAlign: "center",
         fontWeight: "Bold",
@@ -27,7 +27,7 @@ export const StyledEventmanager = styled("Eventmanager", {
     },
     ".desempenho_evento": {
         h1:{textAlign:"center", color: "white"},
-        border: "1px solid blue",
+        //border: "1px solid blue",
         flex: "1",
         height: "400px"
         
@@ -35,7 +35,7 @@ export const StyledEventmanager = styled("Eventmanager", {
     },
     ".inscrições":{
         h1:{textAlign:"center", color: "white"},
-        border: "1px solid green",
+        //border: "1px solid green",
         flex: "1",
         backgroundColor: "rgba(53, 66, 96, 1)",
         borderRadius: "20px",
@@ -45,19 +45,19 @@ export const StyledEventmanager = styled("Eventmanager", {
     },
     ".inscrito":{
         h4:{marginLeft:"30px", color: "white"},
-        border: "1px solid yellow",
+        //border: "1px solid yellow",
         margin: "30px",
         display: "flex",
         ".text":{ 
-        border: "1px solid blue",
+        //border: "1px solid blue",
         flex:"1"
         },
         ".botões":{
         flex:"1",
-        border: "1px solid white",
+        //border: "1px solid white",
         textAlign: "center",
-        ".aceita": { marginRight: "10px", backgroundColor: "rgba(52, 151, 62, 1)" , borderColor: "rgba(52, 151, 62, 1)" , marginTop: "20px", height:"42px", width: "124px" , color:"white", fontWeight: "Bold"},
-        ".recusar": {backgroundColor: "rgba(236, 47, 47, 1)", borderColor:"rgba(236, 47, 47, 1)", height:"42px", width: "124px", marginTop: "20px" , color:"white", fontWeight:"Bold"}
+        ".aceita": { marginRight: "10px", backgroundColor: "rgba(52, 151, 62, 1)" , borderColor: "rgba(52, 151, 62, 1)" , marginTop: "20px", height:"42px", width: "124px" , color:"white", fontWeight: "Bold",  borderRadius:"6.45px"},
+        ".recusar": {backgroundColor: "rgba(236, 47, 47, 1)", borderColor:"rgba(236, 47, 47, 1)", height:"42px", width: "124px", marginTop: "20px" , color:"white", fontWeight:"Bold", borderRadius: "6.45px"}
         
         
 
