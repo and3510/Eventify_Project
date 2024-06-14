@@ -1,11 +1,18 @@
+import { FormatAlignJustify, Height, MarginTwoTone } from "@mui/icons-material"
+import { yellow } from "@mui/material/colors"
+import { border, borderColor, flexbox, grid, padding, textAlign } from "@mui/system"
 import {styled} from "@stitches/react"
 
 export const StyledEventmanager = styled("Eventmanager", {
     ".pagina":{
         border: "1px solid purple",
-        height: "100%",
-        marginRight: "10%",
-        marginLeft: "10%"
+        height: "540px",
+        marginRight: "2%",
+        marginLeft: "5%",
+        padding: "10px",
+        borderRadius: "10px",
+        backgroundColor: "rgba(70, 86, 124, 1)",
+        
     },
     ".titulo":{
         border: "1px solid red",
@@ -13,16 +20,48 @@ export const StyledEventmanager = styled("Eventmanager", {
         textAlign: "center",
         fontWeight: "Bold",
         fontFamily: "Inter",
+        
     },
     ".conteudo":{
         display: "flex"
     },
-    ".Desempenho_Evento": {
+    ".desempenho_evento": {
+        h1:{textAlign:"center", color: "white"},
         border: "1px solid blue",
-        flex: "1"
+        flex: "1",
+        height: "400px"
+        
 
     },
-    ".Inscrições":{
-        border: "1px solid green",flex: "1"
+    ".inscrições":{
+        h1:{textAlign:"center", color: "white"},
+        border: "1px solid green",
+        flex: "1",
+        backgroundColor: "rgba(53, 66, 96, 1)",
+        borderRadius: "20px",
+        
+        
+        
+    },
+    ".inscrito":{
+        h4:{marginLeft:"30px", color: "white"},
+        border: "1px solid yellow",
+        margin: "30px",
+        display: "flex",
+        ".text":{ 
+        border: "1px solid blue",
+        flex:"1"
+        },
+        ".botões":{
+        flex:"1",
+        border: "1px solid white",
+        textAlign: "center",
+        ".aceita": { marginRight: "10px", backgroundColor: "rgba(52, 151, 62, 1)" , borderColor: "rgba(52, 151, 62, 1)" , marginTop: "20px", height:"42px", width: "124px" , color:"white", fontWeight: "Bold"},
+        ".recusar": {backgroundColor: "rgba(236, 47, 47, 1)", borderColor:"rgba(236, 47, 47, 1)", height:"42px", width: "124px", marginTop: "20px" , color:"white", fontWeight:"Bold"}
+        
+        
+
+    }
+    
     }
 })
