@@ -63,6 +63,29 @@ export const StyledEventabout = styled("Eventabout", {
     "#painel p": {
         textAlign: "center",
         color: "#fff"
+    },
+    "#participar": {
+        fontFamily: "monospace",
+        height: "50px",
+        backgroundColor: "#fff",
+        border: "1px solid transparent",
+        borderRadius: "8px",
+
+        cursor: "pointer",
+        transition: "0.2s",
+        marginBottom: "15px",
+        width: "260px",
+        backgroundColor: "rgba(52, 151, 62, 1)",
+        color: "#fff",
+        marginLeft: "70px",
+        marginTop: "30px",
+        marginLeft: "310px"
+
+    },
+    "#participar:hover": {
+
+        backgroundColor: "#2d7e33",
+ 
     }
 
 

@@ -44,7 +44,8 @@ export default function Home() {
       categoria: "Games e Anime",
       info: 'Explorar um mundo vasto e vibrante cheio de Pokémon selvagens para capturar e treinar.',
       local: 'River side',
-      quantidade: "100"
+      quantidade: "100",
+      image: "cristovam_evento.png"
     };
  
       localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
@@ -53,7 +54,7 @@ export default function Home() {
     else if (id == 1) {
 
     let pagina =  {
-      nome: 'Campus', 
+      nome: 'Campus Party', 
       data: '01/05/24', 
       horario: '20:45', 
       id: '1',
@@ -76,7 +77,8 @@ export default function Home() {
         categoria: "Bebida, Rock, Sports",
         info: 'É com imensa alegria que os convidamos para celebrar conosco a festa da AABB. Será uma noite, repleta de festas, com música, comida, bebida, diversão.',
         local: 'AABB Clube',
-        quantidade: "500"
+        quantidade: "500",
+        image: "cristovam_evento.png"
       };
   
         localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
@@ -90,7 +92,8 @@ export default function Home() {
         categoria: "Aniversário",
         info: 'Cristovam ta precisando de companhia para o aniversario',
         local: 'Praia do Arrombado',
-        quantidade: "157"
+        quantidade: "157",
+        image: "cristovam_evento.png"
       };
   
         localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));

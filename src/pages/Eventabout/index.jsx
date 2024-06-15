@@ -3,6 +3,7 @@ import { StyledEventabout } from "./style"
 import BackButton from '../../components/BackButton';
 import Header from '../../components/Header'
 import Image from "../../assets/image.jpeg"
+
 import Share from "../../assets/Share.png"
 import Sino from "../../assets/sino.png"
 import Group from "../../assets/group.png"
@@ -20,13 +21,6 @@ export default function Eventabout() {
     const local = dadosObject.local;
     const quantidade = dadosObject.quantidade;
 
-
-
-    function check() {
-        console.log(nome,data)
-    };
-
-    check();
 
     return (
 
@@ -52,6 +46,8 @@ export default function Eventabout() {
                     </nav>
                     <h3>Descrição do Evento</h3>
                     <p>{info}</p>
+
+                    <button id="participar">Participar</button>
                     
                 </div>
             </section>
