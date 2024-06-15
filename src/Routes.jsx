@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import EventSubscribe from "./pages/EventSubscribe";
 import Eventcreate from "./pages/Eventcreate";
+import Eventabout from "./pages/Eventabout";
+
 
 
 export default function AppRoutes() {
@@ -16,6 +18,8 @@ export default function AppRoutes() {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/subscribe" element={<EventSubscribe />} />
         <Route path="/eventcreate" element={<Eventcreate />} />
+        <Route path="/eventabout" element={<Eventabout />} />
+
 
       </Routes>
     </BrowserRouter>

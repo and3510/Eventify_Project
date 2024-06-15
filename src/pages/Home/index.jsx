@@ -24,6 +24,10 @@ export default function Home() {
     nome: 'Festa na AABB', 
     data: '10/08/24', horario: '17:45', id: '2',
   },
+  {
+    nome: 'Aniversario do Cristovam', 
+    data: '32/10/24', horario: '23:99', id: '3',
+  },
   ];
   localStorage.setItem(`evento`, JSON.stringify({dados}));
 
@@ -32,41 +36,62 @@ export default function Home() {
 
   const handleBotao1Click = (id) => {
     if (id == 0) {
-    let pagina = [ {
+    let pagina = {
       nome: 'Pixelmon', 
       data: '12/04/25', 
       horario: '20:45', 
       id: '0',
       categoria: "Games e Anime",
-      info: 'Explorar um mundo vasto e vibrante cheio de Pokémon selvagens para capturar e treinar.'
-    }]
+      info: 'Explorar um mundo vasto e vibrante cheio de Pokémon selvagens para capturar e treinar.',
+      local: 'River side',
+      quantidade: "100"
+    };
  
       localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
       
     }
     else if (id == 1) {
 
-    let pagina = [ {
+    let pagina =  {
       nome: 'Campus', 
       data: '01/05/24', 
       horario: '20:45', 
       id: '1',
       categoria: "Tecnologia, Inovação e Games",
-      info: 'Chamada para Aventura! A Campus Party te Convida para uma Jornada Inesquecível! Prepare-se para imergir em um universo de inovação, tecnologia e criatividade na Campus Party, o maior festival de tecnologia, empreendedorismo e ciência do mundo!'
-    }]
+      info: 'Chamada para Aventura! A Campus Party te Convida para uma Jornada Inesquecível! Prepare-se para imergir em um universo de inovação, tecnologia e criatividade na Campus Party, o maior festival de tecnologia, empreendedorismo e ciência do mundo!',
+      local: 'Centro de Convesões de teresina',
+      quantidade: "300",
+      image: "cristovam_evento.png"
+    };
 
       localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
     }
 
     else if (id == 2) {
-      let pagina = [ {
+      let pagina =  {
         nome: 'Festa na AABB', 
         data: '07/03/22', 
         horario: '20:45', 
         id: '2',
         categoria: "Bebida, Rock, Sports",
-        info: 'É com imensa alegria que os convidamos para celebrar conosco a festa da AABB. Será uma noite, repleta de festas, com música, comida, bebida, diversão.'
-      }]
+        info: 'É com imensa alegria que os convidamos para celebrar conosco a festa da AABB. Será uma noite, repleta de festas, com música, comida, bebida, diversão.',
+        local: 'AABB Clube',
+        quantidade: "500"
+      };
+  
+        localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
+    }
+    else if (id == 3) {
+      let pagina =  {
+        nome: 'Aniversario do Cristovam', 
+        data: '32/10/24', 
+        horario: '23:99', 
+        id: '3',
+        categoria: "Aniversário",
+        info: 'Cristovam ta precisando de companhia para o aniversario',
+        local: 'Praia do Arrombado',
+        quantidade: "157"
+      };
   
         localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
     }
@@ -86,7 +111,7 @@ export default function Home() {
         {dados.map(function(dados) {
           return (
             <div key={dados.id}>
-              <a onClick={() => handleBotao1Click(dados.id)} href="/subscribe" >
+              <a onClick={() => handleBotao1Click(dados.id)} href="/eventabout" >
               {dados.nome} <br />
               {dados.data}-{dados.horario}
               </a>  
