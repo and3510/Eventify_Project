@@ -1,0 +1,14 @@
+body {
+    background-image: linear-gradient(to bottom right, rgba(233, 100, 121, 0.8), rgba(255, 127, 80, 0.8), rgba(184, 94, 147, 0.8), rgba(123, 93, 148, 0.8));
+    display: block;
+    background-size: cover;
+    position: relative;
+    height: 800px;
+    background-size: cover;
+    overflow-x: hidden;
+    padding-right: 40px;
+
+
+}
+
+  
