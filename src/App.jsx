@@ -1,9 +1,8 @@
-import AppRoutes from './Routes';
-
+import Header from './componentes/Header';
 
 const App = () => {
   return (
-    <AppRoutes />
+    <Header />
   );
 };
 

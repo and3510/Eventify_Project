@@ -19,7 +19,7 @@ export default function AppRoutes() {
         <Route path="/subscribe" element={<EventSubscribe />} />
         <Route path="/eventcreate" element={<Eventcreate />} />
         <Route path="/eventabout" element={<Eventabout />} />
-
+        
 
       </Routes>
     </BrowserRouter>
