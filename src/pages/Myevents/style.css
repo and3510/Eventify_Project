@@ -1,0 +1,137 @@
+/* Target element with ID "pagina" */
+#pagina {
+    width: 100.8%;
+    display: flex;
+    height: 108%;
+    justify-content: space-evenly;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 15px;
+    background-color: transparent;
+  }
+  
+  /* Target element with ID "painel" */
+  #painel {
+    width: 700px;
+    border: 1px solid transparent;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #46567C;
+    box-shadow: 0px 0px 5px #222;
+    display: block;
+  }
+  
+  /* Target h1 element inside element with ID "painel" */
+  #painel h1 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  /* Target label element inside element with ID "painel" */
+  #painel label {
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: 36px;
+    color: #fff;
+  }
+  
+  /* Target input element inside element with ID "painel" */
+  #painel input {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #222;
+    height: 23px;
+    font-family: monospace;
+    width: 350px;
+    margin-left: 37px;
+    margin-top: 7px;
+  }
+  
+  /* Target textarea element inside element with ID "painel" */
+  #painel textarea {
+    margin-top: 7px;
+    margin-left: 35px;
+    width: 350px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #222;
+  }
+  #eventos  {
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background-color: #D3D3D3;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: bolder;
+  }
+  #eventos img {
+    margin-top: 15px;
+    max-width: 50px;
+    height: 35px;
+    transition: 0.2s;
+  }
+  #eventos img:hover {
+    
+    height: 40px;
+  }
+
+  
+  /* Target select element inside element with ID "painel" */
+  #painel select {
+    margin-top: 7px;
+    margin-bottom: 15px;
+    margin-left: 35px;
+    width: 350px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #222;
+  }
+  
+  /* Target img element inside element with ID "painel" */
+  #painel img {
+    width: 250px;
+    margin-left: 28px;
+  }
+  
+  /* Target element with ID "criarEvento" */
+  #criarEvento {
+    font-family: monospace;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 260px;
+    background-color: rgba(52, 151, 62, 1);
+    color: #fff;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  
+  /* Target element with ID "criarEvento" on hover */
+  #criarEvento:hover {
+    background-color: #2d7e33;
+  }
+
+  #painel button {
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+  }
+  #painel button:hover {
+    background-color: #8B0000;
+  }
+
+
+  

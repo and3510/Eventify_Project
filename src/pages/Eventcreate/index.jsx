@@ -1,23 +1,63 @@
 import React from "react";
 import { StyledEventcreate } from "./style"
 import BackButton from '../../components/BackButton';
+import { useState } from "react";
 
 export default function Eventcreate() {
-    /*
+    
         const [nameEvent, setNameEvent] = useState('');
-        const [categoria, setCategoria] = useState('');
-        const [data, setData] = useState('');
-        const [time, setTime] = useState('');
-        const [local, setLocal] = useState('');
-        const [numero, setNumero] = useState('');
-        const [info, setInfo] = useState('');
+        const [categoria1, setCategoria] = useState('');
+        const [data1, setData] = useState('');
+        const [time1, setTime] = useState('');
+        const [local1, setLocal] = useState('');
+        const [numero1, setNumero] = useState('');
+        const [info1, setInfo] = useState('');
 
-    */
+    
 
+        function name(n) {
+            setNameEvent(n.target.value);
+        }
+
+        function categoria(c) {
+            setCategoria(c.target.value);
+        }
+        function data(d) {
+            setData(d.target.value);
+        }
+        function time(t) {
+            setTime(t.target.value);
+        }
+        function local(l) {
+            setLocal(l.target.value);
+        }
+        function numero(nu) {
+            setNumero(nu.target.value);
+        }
+        function info(i) {
+            setInfo(i.target.value);
+        }
+
+
+        const create = () => {
+
+            window.location.href="/home";
+            const dados = {
+            nome: nameEvent, 
+            data: data1, 
+            horario: time1, 
+            categoria: categoria1,
+            info: info1,
+            local: local1,
+            quantidade: numero1,
+            removido: true
+
+            }
+            localStorage.setItem(`create_evento`, JSON.stringify({dados}));
+            
+        }
     return (
 
-        
-        
         <StyledEventcreate>
             
             <section id="pagina">
@@ -28,9 +68,9 @@ export default function Eventcreate() {
                     <h1>Criar Novo Evento</h1>
                     <form action="">
                     <label htmlFor="">Nome do Evento</label> <br />
-                    <input type="text" /> <br />
+                    <input type="text" value={nameEvent} onInput={name} /> <br />
                     <label htmlFor="">Categoria</label> <br />
-                    <select >
+                    <select value={categoria1} onInput={categoria} >
                         <option >nenhum</option>
                         <option >Games</option>
                         <option >Futebol</option>
@@ -38,17 +78,16 @@ export default function Eventcreate() {
                         <option >Festa</option>
                     </select> <br />
                     <label htmlFor="">Data</label> <br />
-                    <input type="date" /> <br />
+                    <input type="date" value={data1} onInput={data} /> <br />
                     <label htmlFor="">Horario</label> <br />
-                    <input type="time" /> <br /> 
+                    <input type="time" value={time1} onInput={time}/> <br /> 
                     <label htmlFor="">Local</label> <br />
-                    <input type="text" /> <br />
+                    <input type="text" value={local1} onInput={local}  /> <br />
                     <label htmlFor="">Numero de Participantes</label> <br />
-                    <input type="number" /> <br />
+                    <input type="number" value={numero1} onInput={numero} />  <br />
                     <label htmlFor="">Descrição</label> <br /> 
-                    <textarea name="" id=""></textarea> <br />
-
-                    <button id="criarEvento">Criar o evento</button>
+                    <textarea name="" id="" value={info1} onInput={info}  ></textarea> <br />
+                    <button id="criarEvento" onClick={create} >Criar o evento</button> 
                     </form>
                 </div>
             </section>

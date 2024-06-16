@@ -2,6 +2,7 @@ import { StyledHome } from './style';
 import CalendarComponent from '../../components/Calendar/Calendar';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Performance from '../../components/Performance';
 
 
 
@@ -104,7 +105,6 @@ export default function Home() {
   return (
     <StyledHome>
       <Header />
-
       <section id="menu">
 
         <div id="eventos_principais">

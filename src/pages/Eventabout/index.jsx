@@ -47,7 +47,9 @@ export default function Eventabout() {
                     <h3>Descrição do Evento</h3>
                     <p>{info}</p>
 
-                    <button id="participar">Participar</button>
+                    <br />
+
+                    <a id="participar" href="/subscribe">Participar</a>
                     
                 </div>
             </section>

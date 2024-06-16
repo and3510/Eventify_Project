@@ -24,7 +24,7 @@ export default function Header() {
             
             <nav id="paginas">
                 <a href="/eventcreate">Criar Evento</a>
-                <a >Meus Eventos</a> 
+                <a href="/myevents" >Meus Eventos</a> 
                 <a onClick={limpar} href="/">Log out</a> 
                 <img src={Icon_Personal} />
                 <p>{nome}</p>
