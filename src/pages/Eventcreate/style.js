@@ -30,8 +30,10 @@ export const StyledEventcreate = styled("Eventcreate", {
     "#painel label": {
         fontFamily: "monospace",
         fontSize: "18px",
-        marginLeft: "36px",
-        color: "#fff"
+        color: "#fff",
+        display: "flex",
+        marginLeft: "45px",
+        marginBottom: "-20px"
     },
 
     "#painel input": {
@@ -81,7 +83,7 @@ export const StyledEventcreate = styled("Eventcreate", {
         width: "260px",
         backgroundColor: "rgba(52, 151, 62, 1)",
         color: "#fff",
-        marginLeft: "70px",
+        marginLeft: "50px",
         marginTop: "30px"
 
     },

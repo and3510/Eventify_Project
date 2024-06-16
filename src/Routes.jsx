@@ -7,6 +7,7 @@ import EventSubscribe from "./pages/EventSubscribe";
 import Eventcreate from "./pages/Eventcreate";
 import Eventabout from "./pages/Eventabout";
 import Myevents from "./pages/Myevents";
+import Eventmanager from "./pages/Eventmanager"
 
 
 
@@ -21,6 +22,8 @@ export default function AppRoutes() {
         <Route path="/eventcreate" element={<Eventcreate />} />
         <Route path="/eventabout" element={<Eventabout />} />
         <Route path="/myevents" element={<Myevents />} />
+        <Route path="/eventmanager" element={<Eventmanager />} />
+        
 
 
       </Routes>

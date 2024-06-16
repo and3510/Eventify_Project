@@ -2,7 +2,8 @@ import { StyledHome } from './style';
 import CalendarComponent from '../../components/Calendar/Calendar';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import Performance from '../../components/Performance';
+
+
 
 
 
@@ -14,7 +15,7 @@ export default function Home() {
 
   
   const dados = [ {
-    nome: 'Pixelmon', 
+    nome: 'Pokemon GO', 
     data: '12/04/25', horario: '20:45', id: '0',
   },
   {
@@ -38,7 +39,7 @@ export default function Home() {
   const handleBotao1Click = (id) => {
     if (id == 0) {
     let pagina = {
-      nome: 'Pixelmon', 
+      nome: 'Pokemon GO', 
       data: '12/04/25', 
       horario: '20:45', 
       id: '0',
@@ -110,7 +111,6 @@ export default function Home() {
         <div id="eventos_principais">
         <h1>Eventos Principais</h1>
         <nav>
-        <h3>Eventos</h3>
         {dados.map(function(dados) {
           return (
             <div key={dados.id}>

@@ -66,7 +66,6 @@ export default function Eventcreate() {
                 <div id="painel">
                     
                     <h1>Criar Novo Evento</h1>
-                    <form action="">
                     <label htmlFor="">Nome do Evento</label> <br />
                     <input type="text" value={nameEvent} onInput={name} /> <br />
                     <label htmlFor="">Categoria</label> <br />
@@ -88,7 +87,6 @@ export default function Eventcreate() {
                     <label htmlFor="">Descrição</label> <br /> 
                     <textarea name="" id="" value={info1} onInput={info}  ></textarea> <br />
                     <button id="criarEvento" onClick={create} >Criar o evento</button> 
-                    </form>
                 </div>
             </section>
                         

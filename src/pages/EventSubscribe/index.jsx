@@ -4,6 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import BackButton from '../../components/BackButton';
 
 const EventSubscribe = () => {
+
+  const storedUsuario = localStorage.getItem('pagina_evento');
+  const jsonData = JSON.parse(storedUsuario);
+  const dadosObject = jsonData.pagina;
+  const nome = dadosObject.nome;
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -49,7 +55,8 @@ const EventSubscribe = () => {
     <Container>
       <FormContainer>
         <BackButton /> 
-        <Title>Inscrição do Evento</Title>
+        <Title>Inscrição do(a) {nome}</Title>
+        <br />
         <Form onSubmit={handleSubmit}>
           <Label>Nome</Label>
           <Input

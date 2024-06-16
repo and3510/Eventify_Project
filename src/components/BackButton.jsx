@@ -10,7 +10,7 @@ const BackButton = () => {
   };
 
   return (
-    <IconButton onClick={handleBackClick} style={{ position: 'absolute', top: 20, left: 20, color: '#ffffff' }}>
+    <IconButton onClick={handleBackClick} style={{ position: 'absolute', top: 100, left: 20, color: '#ffffff' }}>
       <ArrowBackIcon />
     </IconButton>
   );

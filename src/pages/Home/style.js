@@ -22,17 +22,18 @@ export const StyledHome = styled("div", {
 
   },
   "#eventos_principais nav": {
+    
     textAlign: "center",
     border: "1px solid transparent",
     borderRadius: "10px",
     padding: "25px",
     fontFamily: "monospace",
-    paddingTop: "10px",
+    paddingTop: "20px",
     backgroundColor: "#e9dced",
     marginLeft: "30px",
     width: "65%",
     overflowY: "scroll",
-    height: "310px"
+    height: "330px"
   },
   "#eventos_principais h1": {
     fontFamily: "monospace",

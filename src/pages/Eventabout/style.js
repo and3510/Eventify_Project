@@ -3,7 +3,7 @@ import {styled} from "@stitches/react"
 export const StyledEventabout = styled("Eventabout", {
     "#pagina": {
         width: "100.8%",
-        display: "flex",
+        display: "block",
         height: "108%",
         justifyContent: "space-evenly",
         fontFamily: "monospace",
