@@ -8,29 +8,6 @@ import { useState } from "react";
 
 export default function Cadastro() {
 
-  /*const handleNameChange = (e) => {
-    const value = e.target.value;
-    const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]*$/; 
-    if (value.length <= 50 && regex.test(value)) {
-      setName(value);
-      setNameError('');
-    } else if (!regex.test(value)) {
-      setNameError('O nome deve conter apenas letras e espaços.');
-    } else {
-      setNameError('O nome não pode ter mais de 50 caracteres.');
-    }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name && email && phone) {
-      console.log('Nome', name);
-      console.log('E-mail', email);
-      console.log('Telefone', phone);
-      navigate('/thank-you');
-    }
-  };
-    */
 
     const [input1, setInput1] = useState("");
     const [input2, setInput2] = useState("");

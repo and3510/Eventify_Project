@@ -34,8 +34,6 @@ export default function Home() {
   localStorage.setItem(`evento`, JSON.stringify({dados}));
 
 
-
-
   const handleBotao1Click = (id) => {
     if (id == 0) {
     let pagina = {
@@ -47,11 +45,21 @@ export default function Home() {
       info: 'Explorar um mundo vasto e vibrante cheio de Pokémon selvagens para capturar e treinar.',
       local: 'River side',
       quantidade: "100",
-      image: "cristovam_evento.png"
+      image: 3
     };
  
       localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
       
+      const comments = [
+        { name: 'Pokeman', text: 'kkkkkkkkkkkkkkkkkkkk', rating: 5 },
+        { name: 'Hater', text: 'Nao gostei', rating: 1 },
+        { name: 'victor', text: 'Muito bom', rating: 5 },
+        { name: 'MariaDB', text: 'perfeitonnnn', rating: 5 }
+      ];
+    
+      localStorage.setItem(`comentarios`, JSON.stringify({comments}));
+    
+
     }
     else if (id == 1) {
 
@@ -64,10 +72,20 @@ export default function Home() {
       info: 'Chamada para Aventura! A Campus Party te Convida para uma Jornada Inesquecível! Prepare-se para imergir em um universo de inovação, tecnologia e criatividade na Campus Party, o maior festival de tecnologia, empreendedorismo e ciência do mundo!',
       local: 'Centro de Convesões de teresina',
       quantidade: "300",
-      image: "cristovam_evento.png"
+      image: 2
     };
 
       localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
+
+      const comments = [
+        { name: 'Vinicius', text: 'era melhor ver o pelé kkkkkkk', rating: 3 },
+        { name: 'Anderson', text: 'Nao gostei, asmeiii', rating: 5 },
+        { name: 'Juliana', text: 'Muito Ruim', rating: 1 },
+        { name: 'Maria', text: 'legal', rating: 3 }
+      ];
+    
+      localStorage.setItem(`comentarios`, JSON.stringify({comments}));
+    
     }
 
     else if (id == 2) {
@@ -80,10 +98,20 @@ export default function Home() {
         info: 'É com imensa alegria que os convidamos para celebrar conosco a festa da AABB. Será uma noite, repleta de festas, com música, comida, bebida, diversão.',
         local: 'AABB Clube',
         quantidade: "500",
-        image: "cristovam_evento.png"
+        image: 4
       };
   
         localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
+
+        const comments = [
+          { name: 'Futebol01', text: 'Vai ter jogo?', rating: 3 },
+          { name: 'usuario01', text: 'Nao gostei, asmeiii', rating: 5 },
+          { name: 'Romario', text: 'Tem heineken', rating: 5 },
+          { name: 'Estagio da AABB', text: 'perfeito', rating: 5 }
+        ];
+      
+        localStorage.setItem(`comentarios`, JSON.stringify({comments}));
+      
     }
     else if (id == 3) {
       let pagina =  {
@@ -95,11 +123,23 @@ export default function Home() {
         info: 'Cristovam ta precisando de companhia para o aniversario',
         local: 'Praia do Arrombado',
         quantidade: "157",
-        image: "cristovam_evento.png"
+        image: 1
       };
   
         localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
+
+        const comments = [
+          { name: 'Beatriz', text: 'Vai ser no Assaí kkkkkkkkkk', rating: 4 },
+          { name: 'Anderson', text: 'Rapazzz, eu vou', rating: 4 },
+          { name: 'Juliana', text: 'Muito Ruim', rating: 1 },
+          { name: 'Guilerme', text: 'Tu é arrombado', rating: 1 }
+        ];
+      
+        localStorage.setItem(`comentarios`, JSON.stringify({comments}));
+      
     }
+
+
   };
 
 

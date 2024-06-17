@@ -34,6 +34,9 @@ export default function Login() {
 
         if (input1 == email1 && input2 == senha || localStorage.getItem('usuario1')) {
            window.location.href="/home";
+
+           const dados2 = {}
+            localStorage.setItem(`create_evento`, JSON.stringify({dados2}));
         }
 
         else {

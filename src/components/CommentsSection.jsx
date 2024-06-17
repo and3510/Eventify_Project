@@ -1,16 +1,35 @@
 import React, { useState } from 'react';
-import '../styles/CommentSection.css';
+import './CommentSection.css';
 
 function CommentSection() {
+
+  const storedUsuario = localStorage.getItem('usuario1');
+  const jsonData = JSON.parse(storedUsuario);
+  const dadosObject = jsonData.dados;
+  const nome = dadosObject.nome;
+
   const [comment, setComment] = useState('');
   const [rating, setRating] = useState(3);
 
   const handleCommentChange = (e) => setComment(e.target.value);
   const handleRatingChange = (e) => setRating(e.target.value);
+
   const handleSubmit = () => {
+    const mycomments = [
+      { name: nome, text: comment, rating: rating },
+    ];
+
+    localStorage.setItem(`mycomentarios`, JSON.stringify({mycomments}));
     
-    console.log('Comentário:', comment, 'Avaliação:', rating);
+    window.location.href="/eventabout"
   };
+
+
+
+  
+
+
+
 
   return (
     <section className="comment-section">

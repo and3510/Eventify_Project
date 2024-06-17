@@ -1,0 +1,15 @@
+#notificacao {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 600px;
+    top: 30px;
+    width: 250px;
+    background-color: #46567C;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}

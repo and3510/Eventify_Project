@@ -93,7 +93,7 @@ export const StyledCadastro = styled("Cadastro", {
         
     },    
     "#form a": {
-        marginLeft: "58px",
+        marginLeft: "0px",
         fontSize: "13px",
         color: "#fff",
         textDecoration: "none"

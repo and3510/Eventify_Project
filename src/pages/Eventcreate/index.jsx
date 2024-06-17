@@ -42,7 +42,7 @@ export default function Eventcreate() {
         const create = () => {
 
             window.location.href="/home";
-            const dados = {
+            const dados2 = {
             nome: nameEvent, 
             data: data1, 
             horario: time1, 
@@ -53,7 +53,7 @@ export default function Eventcreate() {
             removido: true
 
             }
-            localStorage.setItem(`create_evento`, JSON.stringify({dados}));
+            localStorage.setItem(`create_evento`, JSON.stringify({dados2}));
             
         }
     return (

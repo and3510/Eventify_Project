@@ -3,14 +3,16 @@ import './style.css';
 import BackButton from '../../components/BackButton';
 import Info from '/src/assets/Info_alt.png'
 import config from '/src/assets/Setting_vert.png'
+import Header from "../../components/Header"
 
 
 export default function Myevents() {
 
+
     
     const storedUsuario = localStorage.getItem('create_evento');
     const jsonData = JSON.parse(storedUsuario);
-    const dadosObject = jsonData.dados;
+    const dadosObject = jsonData.dados2;
     const nome = dadosObject.nome;
     const data = dadosObject.data;
     const removido = dadosObject.removido;
@@ -20,11 +22,18 @@ export default function Myevents() {
     const local = dadosObject.local;
     const quantidade = dadosObject.quantidade;
 
+
+
+
+    const comments = [];
+  
+    localStorage.setItem(`comentarios`, JSON.stringify({comments}));
+
       
       
       const removeEvent = () => {
 
-        const dados = {
+        const dados2 = {
           nome: '', 
           data: '', 
           horario: '', 
@@ -35,7 +44,7 @@ export default function Myevents() {
           removido: false
 
           }
-          localStorage.setItem(`create_evento`, JSON.stringify({dados}));
+          localStorage.setItem(`create_evento`, JSON.stringify({dados2}));
           window.location.href="/myevents"
       };
 
@@ -56,7 +65,9 @@ export default function Myevents() {
 
 
     return (
+        
         <section id="pagina">
+          
             <BackButton /> 
             
                 <div id="painel">
@@ -68,12 +79,11 @@ export default function Myevents() {
                   <div> <a href="/eventmanager"> <img src={config} alt="" /></a> 
                   <a onClick={handleBotao1Click} href="/eventabout"><img src={Info} alt="" /></a></div>
                   </div>
-                    : <p>  </p>}
+                    : <p> Nenhum evento criado </p>}
                 </div>
 
 
-
                 </div>
-            </section>
+        </section>
     );
 }

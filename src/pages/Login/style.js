@@ -91,7 +91,7 @@ export const StyledLogin = styled("Login", {
         
     },
     "#form a": {
-        marginLeft: "64px",
+        marginLeft: "0px",
         fontSize: "13px",
         color: "#fff",
         textDecoration: "none"

@@ -1,3 +1,4 @@
+import { color } from 'chart.js/helpers';
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -12,7 +13,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Inter', sans-serif;
   }
+
 `;
+
 
 export const Container = styled.div`
   display: flex;
@@ -42,7 +45,7 @@ export const Title = styled.h1`
   margin: 0 auto 20px auto;
 `;
 
-export const Form = styled.form`
+export const form = styled.form`
   display: flex;
   flex-direction: column;
 `;
@@ -82,3 +85,4 @@ export const Button = styled.button`
     background-color: #2d7e33;
   }
 `;
+

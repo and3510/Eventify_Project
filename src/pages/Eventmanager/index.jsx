@@ -10,6 +10,8 @@ import List from '../../components/listdict'
 export default function Eventmanager() {
     return (
         <StyledEventmanager>
+            <Header />
+            <br />
             <section className="pagina">
                 <div className="titulo">
                     <BackButton />

@@ -1,9 +1,26 @@
 import React, { useState } from 'react';
-import { Container, FormContainer, Title, Form, Label, Input, Button } from './style';
+import { Container, FormContainer, Title, Label, Input, Button } from './style';
 import { useNavigate } from 'react-router-dom';
 import BackButton from '../../components/BackButton';
+import './estilo.css'
 
 const EventSubscribe = () => {
+
+  
+
+  const [showInfo, setShowInfo] = useState(false);
+
+    const handleButtonClick = () => {
+    if (nome && email && phone) {
+    setShowInfo(true);
+    setTimeout(() => setShowInfo(false), 1500); // Tempo em milissegundos (5 segundos)
+
+    setTimeout(function() {
+          window.location.href="/home"
+    }, 3000); // 5 segundos = 5000 milissegundos
+
+  }
+  };
 
   const storedUsuario = localStorage.getItem('pagina_evento');
   const jsonData = JSON.parse(storedUsuario);
@@ -41,15 +58,8 @@ const EventSubscribe = () => {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name && email && phone) {
-      console.log('Nome', name);
-      console.log('E-mail', email);
-      console.log('Telefone', phone);
-      navigate('/thank-you');
-    }
-  };
+
+
 
   return (
     <Container>
@@ -57,7 +67,10 @@ const EventSubscribe = () => {
         <BackButton /> 
         <Title>Inscrição do(a) {nome}</Title>
         <br />
-        <Form onSubmit={handleSubmit}>
+        <div id='notificacao'>
+        {showInfo && <p> {name} está inscrito</p>}
+        </div>
+        <section id='form'>
           <Label>Nome</Label>
           <Input
             type="text"
@@ -84,8 +97,8 @@ const EventSubscribe = () => {
             required
           />
           {phoneError && <span style={{ color: 'red' }}>{phoneError}</span>}
-          <Button type="submit">Inscrever-se</Button>
-        </Form>
+          <Button  onClick={handleButtonClick}>Inscrever-se</Button>
+          </section>
       </FormContainer>
     </Container>
   );
