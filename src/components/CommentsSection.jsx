@@ -8,6 +8,7 @@ function CommentSection() {
   const dadosObject = jsonData.dados;
   const nome = dadosObject.nome;
 
+
   const [comment, setComment] = useState('');
   const [rating, setRating] = useState(3);
 
@@ -22,6 +23,8 @@ function CommentSection() {
     localStorage.setItem(`mycomentarios`, JSON.stringify({mycomments}));
     
     window.location.href="/eventabout"
+
+
   };
 
 

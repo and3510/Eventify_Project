@@ -45,7 +45,8 @@ export default function Home() {
       info: 'Explorar um mundo vasto e vibrante cheio de Pokémon selvagens para capturar e treinar.',
       local: 'River side',
       quantidade: "100",
-      image: 3
+      image: 3,
+      commute: false
     };
  
       localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
@@ -72,7 +73,8 @@ export default function Home() {
       info: 'Chamada para Aventura! A Campus Party te Convida para uma Jornada Inesquecível! Prepare-se para imergir em um universo de inovação, tecnologia e criatividade na Campus Party, o maior festival de tecnologia, empreendedorismo e ciência do mundo!',
       local: 'Centro de Convesões de teresina',
       quantidade: "300",
-      image: 2
+      image: 2,
+      commute: false
     };
 
       localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
@@ -98,7 +100,8 @@ export default function Home() {
         info: 'É com imensa alegria que os convidamos para celebrar conosco a festa da AABB. Será uma noite, repleta de festas, com música, comida, bebida, diversão.',
         local: 'AABB Clube',
         quantidade: "500",
-        image: 4
+        image: 4,
+        commute: false
       };
   
         localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
@@ -123,7 +126,8 @@ export default function Home() {
         info: 'Cristovam ta precisando de companhia para o aniversario',
         local: 'Praia do Arrombado',
         quantidade: "157",
-        image: 1
+        image: 1,
+        commute: false
       };
   
         localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));
