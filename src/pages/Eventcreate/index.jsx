@@ -56,6 +56,7 @@ export default function Eventcreate() {
             localStorage.setItem(`create_evento`, JSON.stringify({dados2}));
             
         }
+
     return (
 
         <StyledEventcreate>
@@ -85,8 +86,9 @@ export default function Eventcreate() {
                     <label htmlFor="">Numero de Participantes</label> <br />
                     <input type="number" value={numero1} onInput={numero} />  <br />
                     <label htmlFor="">Descrição</label> <br /> 
-                    <textarea name="" id="" value={info1} onInput={info}  ></textarea> <br />
+                    <textarea name="" id="" value={info1} onInput={info}  ></textarea> <br /> <br />
                     <button id="criarEvento" onClick={create} >Criar o evento</button> 
+
                 </div>
             </section>
                         

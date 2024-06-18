@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import'./CommentsList.css';
+import { color } from 'chart.js/helpers';
 
 function CommentsList() {
 
@@ -10,12 +11,23 @@ function CommentsList() {
 
   let dadosObjectMine = null;
 
+  let commentIds = null;
+
+
   if (localStorage.getItem('mycomentarios')) {
   const storedMeuComment = localStorage.getItem('mycomentarios');
   const jsonDataMy = JSON.parse(storedMeuComment);
+
   dadosObjectMine = jsonDataMy.mycomments;
+  commentIds = dadosObjectMine.map(comment => comment.id);
+
 
   } 
+
+  const stored = localStorage.getItem('pagina_evento');
+  const json = JSON.parse(stored);
+  const dados = json.pagina;
+  const id = dados.id
 
 
 
@@ -30,7 +42,7 @@ function CommentsList() {
       ))}
       
       <div>
-      {localStorage.getItem('mycomentarios') ?
+      {localStorage.getItem('mycomentarios') && (commentIds == id)  ? 
         dadosObjectMine.map((comment, index) => (
           <div key={index} className="comment">
             <p><strong>{comment.name}</strong> - {comment.text}</p>

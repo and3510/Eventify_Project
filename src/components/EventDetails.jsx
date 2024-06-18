@@ -6,6 +6,7 @@ import Cris from '../assets/cristovam_evento.png'
 import Barradas from '../assets/barradas.jpeg'
 import Pokemon from '../assets/pokemongo.png'
 import Aabb from '../assets/aabb.png'
+import { useState } from 'react';
 
 function EventDetails() {
 
@@ -20,6 +21,32 @@ function EventDetails() {
   const local = dadosObject.local;
   const quantidade = dadosObject.quantidade;
   const image = dadosObject.image;
+  const id = dadosObject.id
+
+
+  const [count, setCount] = useState(true);
+
+  const valorsino = localStorage.getItem('sino');
+  const jsonsino = JSON.parse(valorsino);
+  const valor = jsonsino.count;
+  const Idvalor = jsonsino.id;
+
+
+
+  function botao() {
+    if (count) {
+      setCount(false)
+
+      localStorage.setItem(`sino`, JSON.stringify({count,id}));
+
+    }
+    else {
+      setCount(true)
+      localStorage.setItem(`sino`, JSON.stringify({count,id}));
+
+    }
+  }
+
 
   return (
     <section className="event-details center-text">
@@ -48,7 +75,11 @@ function EventDetails() {
           </div>
 
           <div className="event-icons">
-            <FaBell className="icon" />
+            {valor && (id == Idvalor) ?
+              <FaBell className="iconvalor"  onClick={botao} />
+              :
+              <FaBell className="icon" onClick={botao} />
+            }
             <FaShareAlt className="icon" />
           </div>
         </div>  

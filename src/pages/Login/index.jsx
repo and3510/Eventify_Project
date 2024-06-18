@@ -32,7 +32,9 @@ export default function Login() {
         const email1 = dadosObject.email;
         const senha = dadosObject.senha;
 
-        if (input1 == email1 && input2 == senha || localStorage.getItem('usuario1')) {
+ 
+
+        if (input1 == email1 && input2 == senha && localStorage.getItem('usuario1') && (input1.length > 0 && input2.length > 0 ) ) {
            window.location.href="/home";
 
            const dados2 = {}
@@ -40,7 +42,8 @@ export default function Login() {
         }
 
         else {
-           alert("erro")
+
+           alert("Senha ou Email incorreto")
         }
 
     }

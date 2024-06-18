@@ -15,9 +15,14 @@ function CommentSection() {
   const handleCommentChange = (e) => setComment(e.target.value);
   const handleRatingChange = (e) => setRating(e.target.value);
 
+  const stored = localStorage.getItem('pagina_evento');
+  const json = JSON.parse(stored);
+  const dados = json.pagina;
+  const id = dados.id
+
   const handleSubmit = () => {
     const mycomments = [
-      { name: nome, text: comment, rating: rating },
+      { name: nome, text: comment, rating: rating ,id: id },
     ];
 
     localStorage.setItem(`mycomentarios`, JSON.stringify({mycomments}));
