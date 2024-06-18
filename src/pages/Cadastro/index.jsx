@@ -43,18 +43,23 @@ export default function Cadastro() {
     }
 
     
-
     
     const shoot = () => {
-
-        
+        const regex = /^[ÖØ-öø-ÿ\s]*$/; 
+        const teste = /^[@gmail.com]*$/
 
         if (input1.length == 0 || input2.length == 0  || input3.length  == 0 || input4.length == 0 ) {
             alert("Prenche todos!");
 
         }
+        else if (regex.test(input1)) {
+            alert("Nome nao pode esta escrito com esses caracteres")
+        }
+        else if (input2.length == 0 || regex.test(input2) || !(teste.test(input2))) {
+            alert("Email escrito errado");            
+        }
         else if (input3 != input4) {
-            alert("Senha diferentes")
+            alert("Senha diferentes,obrigatorio ter as duas senhas iguais");
         }
         else {
 

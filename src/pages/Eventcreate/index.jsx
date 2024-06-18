@@ -50,10 +50,14 @@ export default function Eventcreate() {
             info: info1,
             local: local1,
             quantidade: numero1,
-            removido: true
+            removido: true,
+            id: 5
 
             }
             localStorage.setItem(`create_evento`, JSON.stringify({dados2}));
+
+            localStorage.setItem('inscritos', JSON.stringify())
+
             
         }
 

@@ -18,7 +18,7 @@ function CommentsList() {
   const storedMeuComment = localStorage.getItem('mycomentarios');
   const jsonDataMy = JSON.parse(storedMeuComment);
 
-  dadosObjectMine = jsonDataMy.mycomments;
+  dadosObjectMine = jsonDataMy.mycomments;  
   commentIds = dadosObjectMine.map(comment => comment.id);
 
 
@@ -28,6 +28,8 @@ function CommentsList() {
   const json = JSON.parse(stored);
   const dados = json.pagina;
   const id = dados.id
+
+  
 
 
 

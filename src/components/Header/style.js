@@ -59,7 +59,7 @@ export const StyledHeader = styled("header",{
         
     },
     "#paginas img": {
-        width: "60px",
+        width: "70px",
         backgroundColor: "#fff",
         borderRadius: "50px",
         border: "5px solid #transparent",

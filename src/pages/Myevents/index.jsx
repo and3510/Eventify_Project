@@ -21,6 +21,7 @@ export default function Myevents() {
     const info = dadosObject.info;
     const local = dadosObject.local;
     const quantidade = dadosObject.quantidade;
+    const id = dadosObject.id
 
 
 
@@ -57,6 +58,7 @@ export default function Myevents() {
           info: info,
           local: local,
           quantidade: quantidade,
+          id: id
 
           }
           localStorage.setItem(`pagina_evento`, JSON.stringify({pagina}));

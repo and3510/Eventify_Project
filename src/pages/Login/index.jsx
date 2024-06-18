@@ -39,12 +39,20 @@ export default function Login() {
 
            const dados2 = {}
             localStorage.setItem(`create_evento`, JSON.stringify({dados2}));
+
+            const removido = {
+                erro: 0,
+            }
+
+            localStorage.setItem(`remover`, JSON.stringify({removido}));
+
         }
 
         else {
 
            alert("Senha ou Email incorreto")
         }
+
 
     }
     

@@ -33,12 +33,6 @@ function CommentSection() {
   };
 
 
-
-  
-
-
-
-
   return (
     <section className="comment-section">
       <textarea 

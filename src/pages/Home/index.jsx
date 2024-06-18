@@ -14,13 +14,10 @@ const NameButtons = ["Localização", "Categoria", "Data"];
 export default function Home() {
 
   
-  const dados = [ {
-    nome: 'Pokemon GO', 
-    data: '12/04/25', horario: '20:45', id: '0',
-  },
+  const dados = [
   {
     nome: 'Campus Party', 
-    data: '01/05/24', horario: '20:45', id: '1',
+    data: '20/06/24', horario: '20:45', id: '1',
   },
   {
     nome: 'Festa na AABB', 
@@ -28,7 +25,7 @@ export default function Home() {
   },
   {
     nome: 'Aniversario do Cristovam', 
-    data: '32/10/24', horario: '23:99', id: '3',
+    data: '20/10/24', horario: '23:99', id: '3',
   },
   ];
   localStorage.setItem(`evento`, JSON.stringify({dados}));
@@ -66,7 +63,7 @@ export default function Home() {
 
     let pagina =  {
       nome: 'Campus Party', 
-      data: '01/05/24', 
+      data: '20/06/24', 
       horario: '20:45', 
       id: '1',
       categoria: "Tecnologia, Inovação e Games",
@@ -119,7 +116,7 @@ export default function Home() {
     else if (id == 3) {
       let pagina =  {
         nome: 'Aniversario do Cristovam', 
-        data: '32/10/24', 
+        data: '20/10/24', 
         horario: '23:99', 
         id: '3',
         categoria: "Aniversário",
@@ -171,13 +168,6 @@ export default function Home() {
         <div id="calendar">
           <h1>Calendario de Eventos</h1>
           <CalendarComponent /> 
-          <nav>
-            <ul>
-              <button>{NameButtons[0]}</button> 
-              <button>{NameButtons[1]}</button>
-              <button>{NameButtons[2]}</button>
-            </ul>
-          </nav>
         </div>
       </section>
       <Footer />

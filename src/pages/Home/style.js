@@ -33,7 +33,7 @@ export const StyledHome = styled("div", {
     marginLeft: "30px",
     width: "65%",
     overflowY: "scroll",
-    height: "330px"
+
   },
   "#eventos_principais h1": {
     fontFamily: "monospace",

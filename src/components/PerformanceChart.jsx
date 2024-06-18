@@ -2,39 +2,31 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2'; // Import Bar instead of Line
 
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
-import { TbBackground } from 'react-icons/tb';
+
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend); //
 
 const PerformanceChart = () => {
 
 
-  const storedUsuario = localStorage.getItem('remover');
-  const jsonData = JSON.parse(storedUsuario);
+  const valor = localStorage.getItem(`remover`)
+
+  const jsonData = JSON.parse(valor);
   const dadosObject = jsonData.removido;
-  const erro = dadosObject.erro;
+  let error = dadosObject.erro; 
 
-  console.log(erro);
+  if (error >= 1) {
+    
+    localStorage.removeItem('inscritos')
 
-  const salvos = {
-    salvo: erro,
   }
-
-  localStorage.setItem(`salvo`, JSON.stringify({salvos}));
-
-  
-  const storedSalvos = localStorage.getItem('salvo');
-  const jsonSalvo = JSON.parse(storedSalvos);
-  const dadosSalvo = jsonSalvo.salvos;
-  const salvo = dadosSalvo.salvo;
-
   
   const data = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [
       {
-        label: 'Número de inscrições',
-        data: [erro+salvo],
+        label: 'perdidos aceitos',
+        data: [error],
         borderColor: 'red',
         fill: false,
         backgroundColor: 'red',
@@ -42,10 +34,17 @@ const PerformanceChart = () => {
       },
       {
         label: 'Perdidos de participação',
-        data: [5],
+        data: [3-error],
         borderColor: 'blue',
         fill: false,
         backgroundColor: 'blue',
+      },
+      {
+        label: 'total',
+        data: [3],
+        borderColor: 'green',
+        fill: false,
+        backgroundColor: 'green',
       },
     ],
   };

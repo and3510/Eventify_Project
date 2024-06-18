@@ -1,7 +1,7 @@
 import React from "react";
 import {StyledHeader} from './style';
 import Icon_Personal from "../../assets/icon_personal.png"
-import {FaBell} from 'react-icons/fa';
+import E from '../../assets/E.png'
 
 
 
@@ -13,23 +13,19 @@ export default function Header() {
     const dadosObject = jsonData.dados;
     const nome = dadosObject.nome;
 
-    const limpar = () => {
-        localStorage.clear()
-     }
 
     return (
         <StyledHeader>
 
             <section id="header"> 
             
-            <a href="/home"> Eventify</a>
+            <a href="/home"> <img src={E} alt="" /></a>
             
             <nav id="paginas">
                 
                 <a href="/eventcreate">Criar Evento</a>
                 <a href="/myevents" >Meus Eventos</a> 
-                <a onClick={limpar} href="/">Log out</a>
-                <a href=""><FaBell /></a>
+                <a href="/">Log out</a>
                 <img src={Icon_Personal} />
                 <p>{nome}</p>
                 

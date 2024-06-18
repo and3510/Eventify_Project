@@ -1,12 +1,17 @@
 import React from 'react';
 import './EventDetails.css';
 import { FaMapMarkerAlt, FaCalendarAlt, FaClock, FaUser, FaBell, FaShareAlt } from 'react-icons/fa';
+import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { BsArchiveFill } from "react-icons/bs";
 import Cris from '../assets/cristovam_evento.png'
 import Barradas from '../assets/barradas.jpeg'
-import Pokemon from '../assets/pokemongo.png'
+import Pokemon from '/src/assets/pokemon.webp'
 import Aabb from '../assets/aabb.png'
 import { useState } from 'react';
+import NotificationButton from './NotificationButton';
+
 
 function EventDetails() {
 
@@ -24,28 +29,7 @@ function EventDetails() {
   const id = dadosObject.id
 
 
-  const [count, setCount] = useState(true);
 
-  const valorsino = localStorage.getItem('sino');
-  const jsonsino = JSON.parse(valorsino);
-  const valor = jsonsino.count;
-  const Idvalor = jsonsino.id;
-
-
-
-  function botao() {
-    if (count) {
-      setCount(false)
-
-      localStorage.setItem(`sino`, JSON.stringify({count,id}));
-
-    }
-    else {
-      setCount(true)
-      localStorage.setItem(`sino`, JSON.stringify({count,id}));
-
-    }
-  }
 
 
   return (
@@ -75,12 +59,13 @@ function EventDetails() {
           </div>
 
           <div className="event-icons">
-            {valor && (id == Idvalor) ?
-              <FaBell className="iconvalor"  onClick={botao} />
-              :
-              <FaBell className="icon" onClick={botao} />
-            }
-            <FaShareAlt className="icon" />
+            <NotificationButton eventDate={data} />
+            
+          </div>
+          <div id='compatilhar'>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=localhost:5173/seeeventabout" target='_blank'><FaLinkedin /></a>
+            <a href="https://api.whatsapp.com/send?text=localhost:5173/seeeventabout" target='_blank'><FaWhatsapp /></a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=localhost:5173/seeeventabout" target='_blank'><FaFacebook /></a>
           </div>
         </div>  
       </div>
