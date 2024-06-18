@@ -7,22 +7,15 @@ import Comment1 from '../../components/CommentsList'
 import Detail from '../../components/EventDetails'
 
 export default function Eventabout() {
-    
-
-    return (
-
-        <StyledEventabout>
-            <Header />
-            <BackButton /> 
-            <section id="pagina">
-                <Detail />
-                
-
-            </section>
-            <Comment1 />
-            <Comment />
-            
-                        
-        </StyledEventabout>
-    )
+  return (
+    <StyledEventabout>
+      <Header />
+      <BackButton /> 
+      <section id="pagina">
+        <Detail />
+      </section>
+      <Comment1 />
+      <Comment />
+    </StyledEventabout>
+  );
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 import './EventDetails.css';
-import { FaMapMarkerAlt, FaCalendarAlt, FaClock, FaUser, FaBell, FaShareAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaCalendarAlt, FaClock, FaUser, FaShareAlt } from 'react-icons/fa';
 import { BsArchiveFill } from "react-icons/bs";
-import Cris from '../assets/cristovam_evento.png'
-import Barradas from '../assets/barradas.jpeg'
-import Pokemon from '../assets/pokemongo.png'
-import Aabb from '../assets/aabb.png'
+import Cris from '../assets/cristovam_evento.png';
+import Barradas from '../assets/barradas.jpeg';
+import Pokemon from '../assets/pokemongo.png';
+import Aabb from '../assets/aabb.png';
+import NotificationButton from './NotificationButton';
 
 function EventDetails() {
-
   const storedUsuario = localStorage.getItem('pagina_evento');
   const jsonData = JSON.parse(storedUsuario);
   const dadosObject = jsonData.pagina;
@@ -26,29 +26,15 @@ function EventDetails() {
       <div className="event-header">
         <h1>{nome}</h1>
         <div className="event-image">
-          
           <div>
-                  {image==1 ? 
-                  <div>
-                    <img src={Cris} alt="" />
-                  </div>
-                    : image==2 ?
-                    <div>
-                      <img src={Barradas} alt="" />
-                    </div>
-                    : image==3 ?
-                    <div>
-                      <img src={Pokemon} alt="" />
-                    </div>
-                    : image==4 ?
-                    <div>
-                      <img src={Aabb} alt="" />
-                    </div>
-                    : <img src="https://via.placeholder.com/600x300" alt="Evento" />}
+            {image === 1 ? <img src={Cris} alt="" /> :
+             image === 2 ? <img src={Barradas} alt="" /> :
+             image === 3 ? <img src={Pokemon} alt="" /> :
+             image === 4 ? <img src={Aabb} alt="" /> :
+             <img src="https://via.placeholder.com/600x300" alt="Evento" />}
           </div>
-
           <div className="event-icons">
-            <FaBell className="icon" />
+            <NotificationButton eventDate={data} />
             <FaShareAlt className="icon" />
           </div>
         </div>  
@@ -62,13 +48,10 @@ function EventDetails() {
       </div>
       <h2>Descrição do Evento</h2>
       <div className="event-description">
-        
         <p>{info}</p>
-        
       </div>
       <br />
-      <a href="/subscribe" className="participate-button" > Participar</a>
-
+      <a href="/subscribe" className="participate-button">Participar</a>
     </section>
   );
 }

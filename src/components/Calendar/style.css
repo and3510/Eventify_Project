@@ -21,4 +21,15 @@
     background: #124e60;
     color: white;
   }
+
+  .myMarkedDate {
+    background: #FF7F50 !important;
+    color: white !important;
+    position: relative;
+  }
+
+  
+
+  
+  
   
