@@ -24,14 +24,6 @@ function CommentsList() {
 
   } 
 
-  const stored = localStorage.getItem('pagina_evento');
-  const json = JSON.parse(stored);
-  const dados = json.pagina;
-  const id = dados.id
-
-  
-
-
 
   return (
     <section className="comments-list">

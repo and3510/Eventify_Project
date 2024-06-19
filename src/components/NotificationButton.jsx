@@ -10,7 +10,27 @@ const NotificationButton = ({ eventDate }) => {
     const storedUsuario = localStorage.getItem('pagina_evento');
     const jsonData = JSON.parse(storedUsuario);
     const dadosObject = jsonData.pagina;
+    const nome = dadosObject.nome;
     const data = dadosObject.data;
+    const horario = dadosObject.horario;
+    const categoria = dadosObject.categoria;
+    const info = dadosObject.info;
+    const local = dadosObject.local;
+    const id = dadosObject.id;
+
+
+    if (localStorage.getItem('notice')) {
+
+      localStorage.removeItem('notice')
+
+    } else {
+      const notificacoes = [
+        {nome, data, categoria, local, id},
+      ];
+  
+      localStorage.setItem('notice', JSON.stringify({notificacoes}));
+    }
+
     
     // Adiciona a data específica (01/05/2024) ao localStorage
     const specificDate = new Date('06-21-24');
@@ -20,7 +40,8 @@ const NotificationButton = ({ eventDate }) => {
     console.log('Date added to localStorage:', specificDate);
   };
 
-  return <FaBell className="icon" onClick={handleNotificationClick} />;
+  return ( <FaBell className="icon"  onClick={handleNotificationClick }/>
+  );
 };
 
 export default NotificationButton;

@@ -35,7 +35,7 @@ export default function Home() {
     if (id == 0) {
     let pagina = {
       nome: 'Pokemon GO', 
-      data: '12/04/25', 
+      data: '12-04-25', 
       horario: '20:45', 
       id: '0',
       categoria: "Games e Anime",
@@ -63,7 +63,7 @@ export default function Home() {
 
     let pagina =  {
       nome: 'Campus Party', 
-      data: '20/06/24', 
+      data: '20-06-24', 
       horario: '20:45', 
       id: '1',
       categoria: "Tecnologia, Inovação e Games",
@@ -90,7 +90,7 @@ export default function Home() {
     else if (id == 2) {
       let pagina =  {
         nome: 'Festa na AABB', 
-        data: '07/03/22', 
+        data: '07-03-22', 
         horario: '20:45', 
         id: '2',
         categoria: "Bebida, Rock, Sports",
@@ -116,7 +116,7 @@ export default function Home() {
     else if (id == 3) {
       let pagina =  {
         nome: 'Aniversario do Cristovam', 
-        data: '20/10/24', 
+        data: '20-10-24', 
         horario: '23:99', 
         id: '3',
         categoria: "Aniversário",

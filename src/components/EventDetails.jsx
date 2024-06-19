@@ -1,6 +1,6 @@
 import React from 'react';
 import './EventDetails.css';
-import { FaMapMarkerAlt, FaCalendarAlt, FaClock, FaUser, FaBell, FaShareAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaCalendarAlt, FaClock, FaUser } from 'react-icons/fa';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -9,7 +9,6 @@ import Cris from '../assets/cristovam_evento.png'
 import Barradas from '../assets/barradas.jpeg'
 import Pokemon from '/src/assets/pokemon.webp'
 import Aabb from '../assets/aabb.png'
-import { useState } from 'react';
 import NotificationButton from './NotificationButton';
 
 
@@ -26,9 +25,6 @@ function EventDetails() {
   const local = dadosObject.local;
   const quantidade = dadosObject.quantidade;
   const image = dadosObject.image;
-  const id = dadosObject.id
-
-
 
 
 

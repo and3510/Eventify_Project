@@ -52,12 +52,6 @@ export default function Cadastro() {
             alert("Prenche todos!");
 
         }
-        else if (regex.test(input1)) {
-            alert("Nome nao pode esta escrito com esses caracteres")
-        }
-        else if (input2.length == 0 || regex.test(input2) || !(teste.test(input2))) {
-            alert("Email escrito errado");            
-        }
         else if (input3 != input4) {
             alert("Senha diferentes,obrigatorio ter as duas senhas iguais");
         }

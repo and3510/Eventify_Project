@@ -9,6 +9,7 @@ import Eventabout from "./pages/Eventabout";
 import Myevents from "./pages/Myevents";
 import Eventmanager from "./pages/Eventmanager"
 import SeeEventabout from "./pages/SeeEventabout";
+import Notification from "./pages/Notification";
 
 
 
@@ -25,6 +26,7 @@ export default function AppRoutes() {
         <Route path="/myevents" element={<Myevents />} />
         <Route path="/eventmanager" element={<Eventmanager />} />
         <Route path="/seeeventabout" element={<SeeEventabout />} />
+        <Route path="/notification" element={<Notification />} />
         
 
 
